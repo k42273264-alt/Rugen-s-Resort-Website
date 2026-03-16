@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Explore Rügen | Sunday Resort Rügen</title>
+
+    <meta
+      name="description"
+      content="Discover the natural and cultural highlights around Sunday Resort Rügen including the chalk cliffs, national park and local museums."
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tourist-attractions.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@600&family=Lora:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <!-- HEADER (same as Rügen hotel page) -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="images/output-onlinepngtools.png"
+              alt="Sunday Resort Rügen"
+            />
+          </a>
+        </div>
+
+        <div class="nav-container">
+          <nav class="main-navigation" aria-label="Main Navigation">
+            <ul class="nav-menu">
+              <li class="has-dropdown">
+                <a href="#" aria-haspopup="true">About</a>
+                <ul class="dropdown-menu">
+                  <li><a href="about.html">Our Story</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </li>
+
+              <li class="has-dropdown">
+                <a href="#" aria-haspopup="true">Accommodation</a>
+                <ul class="dropdown-menu">
+                  <li><a href="hotel.html">Hotel</a></li>
+                  <li><a href="apartments.html">Apartments</a></li>
+                </ul>
+              </li>
+
+              <li class="has-dropdown">
+                <a href="#" aria-haspopup="true">Splash Adventure World</a>
+                <ul class="dropdown-menu">
+                  <li><a href="pool-area.html">Pool Area</a></li>
+                  <li><a href="spa.html">Spa</a></li>
+                  <li>
+                    <a href="indoor-playground.html">Indoor Playground</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="family.html">Family</a></li>
+              <li><a href="offers.html">Offers</a></li>
+
+              <li class="has-dropdown">
+                <a href="#" aria-haspopup="true">Gastronomie</a>
+                <ul class="dropdown-menu">
+                  <li><a href="gastronomy.html">Hotel</a></li>
+                </ul>
+              </li>
+
+              <li><a href="events.html">Meeting & Events</a></li>
+              <li><a href="tourist-attractions.html">Tourist Attraction</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="nav-book">
+          <a href="#" class="btn-book">Book Now</a>
+        </div>
+
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="hero-section"
+      style="
+        background-image: url(&quot;images/Jasmund National Park.jpg&quot;);
+      "
+    >
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <h1>Explore Rügen</h1>
+        <p>Discover the cultural and natural wonders of the region</p>
+
+        <a href="#attractions" class="btn-primary">Discover Attractions</a>
+      </div>
+    </section>
+
+    <section class="overview-section">
+      <div class="section-label">Island Adventures</div>
+
+      <div class="overview-container">
+        <div class="overview-divider"></div>
+
+        <h2>Experience the Beauty of Rügen</h2>
+
+        <p data-animate>
+          The Sunday Resort Rügen is located on the Jasmund peninsula near the
+          famous chalk cliffs and the Jasmund National Park. From beautiful
+          beaches to scenic hiking trails, the island offers unforgettable
+          experiences in every season.
+        </p>
+
+        <div class="overview-divider"></div>
+      </div>
+    </section>
+
+    <section class="attractions-section" id="attractions">
+      <div class="section-label">Top Attractions</div>
+
+      <h2>Discover the Region</h2>
+
+      <div class="attractions-container">
+        <div class="attraction-card" data-animate>
+          <img src="images/Jasmund National Park.jpg" />
+
+          <h3>Jasmund National Park</h3>
+
+          <p>
+            Home to the famous chalk cliffs and UNESCO beech forests, offering
+            spectacular coastal views.
+          </p>
+
+          <button class="details-btn" data-attraction="jasmund">Details</button>
+        </div>
+
+        <div class="attraction-card" data-animate>
+          <img src="images/Schaabe Beach.jpg" />
+
+          <h3>Schaabe Beach</h3>
+
+          <p>
+            A 12 km long sandy beach – the longest beach on the Baltic Sea
+            coast.
+          </p>
+
+          <button class="details-btn" data-attraction="beach">Details</button>
+        </div>
+
+        <div class="attraction-card" data-animate>
+          <img src="images/chalk museum.jpg.jpeg" />
+
+          <h3>Rügen Chalk Museum</h3>
+
+          <p>
+            Interactive exhibition about chalk mining and fossils from the
+            Cretaceous period.
+          </p>
+
+          <button class="details-btn" data-attraction="museum">Details</button>
+        </div>
+
+        <div class="attraction-card" data-animate>
+          <img src="images/Störtebeker Festival.jpg" />
+
+          <h3>Störtebeker Festival</h3>
+
+          <p>
+            One of Germany’s most spectacular open-air theatre events with
+            pirates, ships and fireworks.
+          </p>
+
+          <button class="details-btn" data-attraction="festival">
+            Details
+          </button>
+        </div>
+
+        <div class="attraction-card" data-animate>
+          <img src="images/cycling.jpg" />
+
+          <h3>Cycling & Hiking</h3>
+
+          <p>
+            Explore the island by bike or follow scenic hiking trails through
+            forests and along the cliffs.
+          </p>
+
+          <button class="details-btn" data-attraction="cycling">Details</button>
+        </div>
+      </div>
+
+      <div class="modal" id="attractionModal">
+        <div class="modal-content">
+          <span class="modal-close">&times;</span>
+
+          <h3 id="modalTitle"></h3>
+
+          <div id="modalDetails"></div>
+        </div>
+      </div>
+    </section>
+
+     <!-- CTA -->
+
+    <section class="cta-section">
+      <div class="cta-container">
+        <h2>Plan Your Island Adventure</h2>
+        <p>Discover the beauty of Rügen while staying at Sunday Resort.</p>
+        <p><a href="mailto:reception.rugen@hotelssunday.com ">reception.rugen@hotelssunday.com | <a href="tel:+49 38302 97700">+49 38302 97700</a></p>
+        <a href="contact.html" class="btn-primary">Book Your Stay</a>
+      </div>
+    </section>
+
+    
+    <!-- Footer -->
+
+    <footer class="site-footer">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <a href="contact.html" class="footer-button">Contact Us</a>
+          <address>
+            Sunday Resort Rügen<br />
+            Sagard, Germany<br />
+            <a href="tel:+493830297700">+49 38302 97700</a><br />
+            <a href="mailto:reception.rugen@hotelssunday.com "
+              >reception.rugen@hotelssunday.com </a
+            ><br />
+            <a href="mailto:sales.rugen@hotelssunday.com"
+              >sales.rugen@hotelssunday.com</a
+            ><br />
+            <a href="">Instagram: </a><br />
+            <a href="">Facebook: </a>
+          </address>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+
+          <ul>
+            <li><a href="#">Accommodation</a></li>
+            <li><a href="#">Spa & Wellness</a></li>
+            <li><a href="#">Gastronomy</a></li>
+            <li><a href="#">Families</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column newsletter">
+          <h4>Newsletter</h4>
+          <form
+            action="https://formsubmit.co/sales.rugen@hotelssunday.com"
+            method="POST"
+            class="newsletter-form"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              required
+              aria-label="Your Email"
+            />
+            <button
+              class="btn"
+              type="submit"
+              aria-label="Subscribe to Newsletter"
+            >
+              Subscribe
+            </button>
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Newsletter Signup!"
+            />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://resortrugen.booksundays.com/newsletter?subscribed=true"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 The Resort Rügen by Sunday. All rights reserved.</p>
+        <ul class="footer-legal">
+          <!-- <li><a href="privacy.html">Privacy Policy</a></li> -->
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="tourist-attractions.js"></script>
+  </body>
+</html>
