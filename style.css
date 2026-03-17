@@ -127,7 +127,7 @@ body {
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: 24px;
+  gap: 28px;
   margin: 0 auto;
   padding: 0;
   align-items: center;
@@ -574,6 +574,8 @@ body {
   color: var(--light-color);
   text-align: center;
 }
+
+
 
 /* Magazine Sections */
 .magazine-section {
@@ -1204,4 +1206,26 @@ body {
 .modal-content button:focus {
   background: var(--accent-color);
   color: var(--dark-color);
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 10;
+  padding: 0 20px;
+}
+
+.prev-slide,
+.next-slide {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
 }
