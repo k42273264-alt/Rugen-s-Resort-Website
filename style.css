@@ -11,7 +11,7 @@
   --header-height: 60px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@600&family=Lora:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@600&family=Lora:wght@400;500&display=swap");
 
 * {
   margin: 0;
@@ -19,7 +19,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   max-width: 100vw;
   overflow-x: hidden;
@@ -27,7 +28,7 @@ html, body {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.6;
@@ -67,7 +68,9 @@ body {
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Header */
@@ -89,25 +92,24 @@ body {
 
 .header-container {
   display: flex;
-  align-items: center;       /* fix vertical alignment */
+  align-items: center;
   justify-content: space-between;
-  max-width: 1400px;         /* more width for many menu items */
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 12px 30px;        /* equal left/right spacing */
-  gap: 25px;
+  padding: 0 30px; /* remove vertical padding */
+  height: 70px; /* fixed height */
 }
 
 .logo {
-  flex: 0 0 auto;
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .logo img {
-  max-height: 38px;
+  height: 32px; /* fixed height instead of max-height */
   width: auto;
-  object-fit: contain;
-  transition: var(--transition);
+  display: block;
 }
 
 .logo img:hover {
@@ -146,7 +148,7 @@ body {
 }
 
 .main-navigation ul li a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -348,13 +350,13 @@ body {
 }
 
 .slide-content h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: clamp(2.5rem, 5vw, 3.2rem);
   font-weight: 700;
   margin-bottom: 20px;
   color: #fff;
   text-align: center;
-  text-shadow: 
+  text-shadow:
     0 2px 4px rgba(0, 0, 0, 0.8),
     0 4px 8px rgba(0, 0, 0, 0.6);
   letter-spacing: 0.5px;
@@ -362,7 +364,7 @@ body {
 }
 
 .slide-content p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: clamp(0.9rem, 1.8vw, 1.05rem);
   background: rgba(0, 0, 0, 0.4);
   color: #f2f2f2;
@@ -453,7 +455,11 @@ body {
 /* Section Transition Quote */
 .section-transition-quote {
   padding: 50px 20px;
-  background: linear-gradient(120deg, var(--light-color) 80%, var(--primary-color) 100%);
+  background: linear-gradient(
+    120deg,
+    var(--light-color) 80%,
+    var(--primary-color) 100%
+  );
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -471,7 +477,7 @@ body {
 }
 
 .quote-text {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: clamp(1rem, 2vw, 1.3rem);
   font-style: italic;
   background: linear-gradient(90deg, var(--primary-color), #4a7ba3);
@@ -494,12 +500,16 @@ body {
   left: 20px;
   width: 30px;
   height: calc(100% - 120px);
-  background: linear-gradient(180deg, var(--secondary-color), var(--primary-color));
+  background: linear-gradient(
+    180deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
   border-radius: 4px;
 }
 
 .section-label {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 3rem;
   color: var(--primary-color);
   text-transform: uppercase;
@@ -542,7 +552,11 @@ body {
 .highlight-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(43, 78, 114, 0.7), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(
+    180deg,
+    rgba(43, 78, 114, 0.7),
+    rgba(0, 0, 0, 0.5)
+  );
   opacity: 0;
   display: flex;
   align-items: center;
@@ -555,7 +569,7 @@ body {
 }
 
 .highlight-title {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: clamp(1.3rem, 2vw, 1.6rem);
   color: var(--light-color);
   text-align: center;
@@ -576,19 +590,19 @@ body {
 }
 
 .single-banner {
-  flex: 0 0 50%; 
+  flex: 0 0 50%;
   position: relative;
 }
 
 .single-banner img {
   width: 100%;
-  height: 400px; 
-  object-fit: fill; 
+  height: 400px;
+  object-fit: fill;
   object-position: center;
   border-radius: 12px;
   box-shadow: var(--shadow-light);
-  image-rendering: auto; 
-  display: block; 
+  image-rendering: auto;
+  display: block;
 }
 
 .magazine-content {
@@ -598,14 +612,14 @@ body {
 }
 
 .magazine-content h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: clamp(1.8rem, 3vw, 2.2rem);
   color: var(--secondary-color);
   margin-bottom: 15px;
 }
 
 .magazine-content p {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 1rem;
   color: var(--dark-color);
   margin-bottom: 20px;
@@ -615,7 +629,8 @@ body {
 /* Wedding Section */
 .wedding-section {
   padding: 100px 20px;
-  background: url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+  background: url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80")
+    no-repeat center center/cover;
   background-attachment: fixed;
   position: relative;
   overflow: hidden;
@@ -623,13 +638,17 @@ body {
 }
 
 .wedding-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(249, 249, 249, 0.85), rgba(249, 249, 249, 0.9));
+  background: linear-gradient(
+    180deg,
+    rgba(249, 249, 249, 0.85),
+    rgba(249, 249, 249, 0.9)
+  );
   z-index: 1;
 }
 
@@ -642,7 +661,7 @@ body {
 }
 
 .wedding-content h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: clamp(2.2rem, 4vw, 2.8rem);
   color: var(--secondary-color);
   margin-bottom: 25px;
@@ -650,7 +669,7 @@ body {
 }
 
 .wedding-content p {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 1.1rem;
   color: var(--dark-color);
   line-height: 1.8;
@@ -672,7 +691,9 @@ body {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: var(--shadow-light);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
   background: var(--light-color);
 }
 
@@ -705,19 +726,18 @@ body {
 }
 
 .wedding-space h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.5rem;
   color: var(--dark-color);
   margin-bottom: 15px;
 }
 
 .wedding-space p {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 1rem;
   color: var(--dark-color);
   line-height: 1.7;
 }
-
 
 /* Things To Do Section */
 .things-section {
@@ -767,7 +787,7 @@ body {
   color: var(--primary-color);
   text-decoration: none;
   font-weight: 500;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
 }
 
 .thing-info a:hover {
@@ -794,14 +814,15 @@ body {
   padding: 15px;
   background: #fff;
   border: 1px solid var(--primary-color);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.1rem;
   cursor: pointer;
   text-align: left;
   transition: background 0.3s;
 }
 
-.accordion-toggle:hover, .accordion-toggle.active {
+.accordion-toggle:hover,
+.accordion-toggle.active {
   background: var(--primary-color);
   color: #fff;
 }
@@ -812,7 +833,7 @@ body {
   background: #fff;
   border: 1px solid #ddd;
   border-top: none;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
 }
 
 .accordion-content.active {
@@ -827,19 +848,18 @@ body {
 }
 
 .pet-policy-section h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: clamp(2rem, 3vw, 2.5rem);
   color: var(--secondary-color);
   margin-bottom: 20px;
 }
 
 .pet-policy-section p {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 1rem;
   max-width: 800px;
   margin: 0 auto 20px;
 }
-
 
 /* Map Section */
 .map-container {
@@ -886,7 +906,7 @@ body {
 }
 
 .footer-column h4 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.2rem;
   color: whitesmoke;
   margin-bottom: 15px;
@@ -926,7 +946,7 @@ body {
   padding: 10px;
   border: 1px solid var(--border-color);
   border-radius: 6px;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 0.9rem;
   flex: 1;
 }
@@ -1163,7 +1183,7 @@ body {
 }
 
 .modal-content p {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 1rem;
   color: var(--dark-color);
   margin: 15px 0;
