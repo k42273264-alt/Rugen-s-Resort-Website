@@ -433,6 +433,14 @@ async function loadLanguage(lang) {
   if (translations["page_title"]) {
     document.title = translations["page_title"];
   }
+
+  //  FIX: ensure slider content also updates
+  document.querySelectorAll(".slide [data-key]").forEach((el) => {
+    const key = el.getAttribute("data-key");
+    if (translations[key]) {
+      el.textContent = translations[key];
+    }
+  });
 }
 
 // Load on start
