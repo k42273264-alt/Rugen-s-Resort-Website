@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Apartments | Sunday Resort Rügen</title>
+    <title data-key="apartments_meta_title">Apartments | Sunday Resort Rügen</title>
 
     <meta
       name="description"
+      data-key-content="apartments_meta_description"
       content="Comfortable holiday apartments at Sunday Resort Rügen surrounded by countryside and just a short walk from the hotel."
     />
 
@@ -31,7 +32,7 @@
       <div class="loader"></div>
     </div>
 
-   <!-- HEADER -->
+    <!-- HEADER -->
     <header class="site-header">
       <div class="header-container">
         <div class="logo">
@@ -39,6 +40,7 @@
             <img
               src="images/output-onlinepngtools.png"
               alt="Sunday Resort Rügen"
+              data-key-alt="logo_alt"
             />
           </a>
         </div>
@@ -47,54 +49,76 @@
           <nav class="main-navigation" aria-label="Main Navigation">
             <ul class="nav-menu">
               <li class="has-dropdown">
-                <a href="#" aria-haspopup="true">About</a>
+                <a href="#" aria-haspopup="true" data-key="nav_about">About</a>
                 <ul class="dropdown-menu">
-                  <li><a href="about.html">Our Story</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                  <li><a href="gastronomy.html">Gastronomie - Hotel</a></li>
-                  <li><a href="tourist-attractions.html">Tourist Attraction</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-              </li>
-
-              <li class="has-dropdown">
-                <a href="#" aria-haspopup="true">Accommodation</a>
-                <ul class="dropdown-menu">
-                  <li><a href="hotel.html">Hotel</a></li>
-                  <li><a href="apartments.html">Apartments</a></li>
-                </ul>
-              </li>
-
-              <li class="has-dropdown">
-                <a href="#" aria-haspopup="true">Splash Adventure World</a>
-                <ul class="dropdown-menu">
-                  <li><a href="pool-area.html">Pool Area</a></li>
-                  <li><a href="spa.html">Spa</a></li>
                   <li>
-                    <a href="indoor-playground.html">Indoor Playground</a>
+                    <a href="about.html" data-key="nav_story">Our Story</a>
+                  </li>
+                  <li>
+                    <a href="contact.html" data-key="nav_contact">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="gastronomy.html" data-key="nav_gastronomy"
+                      >Gastronomie - Hotel</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="tourist-attractions.html"
+                      data-key="nav_attractions"
+                      >Tourist Attraction</a
+                    >
+                  </li>
+                  <li>
+                    <a href="gallery.html" data-key="nav_gallery">Gallery</a>
                   </li>
                 </ul>
               </li>
 
-              <li><a href="family.html">Family</a></li>
-              <li><a href="offers.html">Offers</a></li>
-
-              <!-- <li class="has-dropdown">
-                <a href="#" aria-haspopup="true">Gastronomie</a>
+              <li class="has-dropdown">
+                <a href="#" aria-haspopup="true" data-key="nav_accommodation"
+                  >Accommodation</a
+                >
                 <ul class="dropdown-menu">
-                  <li><a href="gastronomy.html">Hotel</a></li>
+                  <li><a href="hotel.html" data-key="nav_hotel">Hotel</a></li>
+                  <li>
+                    <a href="apartments.html" data-key="nav_apartments"
+                      >Apartments</a
+                    >
+                  </li>
                 </ul>
-              </li> -->
+              </li>
 
-              <li><a href="events.html">Meeting & Events</a></li>
-              <!-- <li><a href="tourist-attractions.html">Tourist Attraction</a></li> -->
-              <!-- <li><a href="gallery.html">Gallery</a></li> -->
+              <li class="has-dropdown">
+                <a href="#" aria-haspopup="true" data-key="nav_splash"
+                  >Splash Adventure World</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="pool-area.html" data-key="nav_pool">Pool Area</a>
+                  </li>
+                  <li><a href="spa.html" data-key="nav_spa">Spa</a></li>
+                  <li>
+                    <a href="indoor-playground.html" data-key="nav_playground"
+                      >Indoor Playground</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="family.html" data-key="nav_family">Family</a></li>
+              <li><a href="offers.html" data-key="nav_offers">Offers</a></li>
+
+              <li>
+                <a href="events.html" data-key="nav_events">Meeting & Events</a>
+              </li>
             </ul>
           </nav>
         </div>
 
         <div class="nav-book">
-          <a href="#" class="btn-book">Book Now</a>
+          <a href="#" class="btn-book" data-key="book_now">Book Now</a>
+          <button id="langToggle" class="lang-btn">DE</button>
         </div>
 
         <div class="mobile-menu-toggle">
@@ -105,9 +129,7 @@
       </div>
     </header>
 
-
     <!-- HERO -->
-
     <section
       class="hero-section"
       style="
@@ -117,25 +139,32 @@
       <div class="hero-overlay"></div>
 
       <div class="hero-content">
-        <h1>Holiday Apartments</h1>
+        <h1 data-key="apartments_hero_title">Holiday Apartments</h1>
 
-        <p>Spacious countryside apartments just a short walk from the hotel</p>
+        <p data-key="apartments_hero_text">
+          Spacious countryside apartments just a short walk from the hotel
+        </p>
 
-        <a href="#apartments" class="btn-primary">Explore Apartments</a>
+        <a href="#apartments" class="btn-primary" data-key="apartments_hero_btn"
+          >Explore Apartments</a
+        >
       </div>
     </section>
 
     <!-- OVERVIEW -->
-
     <section class="overview-section">
-      <div class="section-label">Apartments</div>
+      <div class="section-label" data-key="apartments_overview_label">
+        Apartments
+      </div>
 
       <div class="overview-container">
         <div class="overview-divider"></div>
 
-        <h2>A Relaxing Vacation Village</h2>
+        <h2 data-key="apartments_overview_title">
+          A Relaxing Vacation Village
+        </h2>
 
-        <p data-animate>
+        <p data-animate data-key="apartments_overview_text">
           The vacation village at Sunday Resort Rügen offers 86 cozy apartments
           in two-story houses surrounded by expansive lawns and peaceful
           countryside. The apartments provide comfortable living spaces and are
@@ -147,96 +176,162 @@
     </section>
 
     <!-- APARTMENTS -->
-
     <section class="rooms-section" id="apartments">
-      <div class="section-label">Apartment Types</div>
+      <div class="section-label" data-key="apartments_types_label">
+        Apartment Types
+      </div>
 
-      <h2>Choose Your Stay</h2>
+      <h2 data-key="apartments_types_title">Choose Your Stay</h2>
 
       <div class="rooms-filter">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="one">1 Bedroom</button>
-        <button class="filter-btn" data-filter="two">2 Bedroom</button>
-        <button class="filter-btn" data-filter="large">Large Apartments</button>
+        <button
+          class="filter-btn active"
+          data-filter="all"
+          data-key="apartments_filter_all"
+        >
+          All
+        </button>
+        <button
+          class="filter-btn"
+          data-filter="one"
+          data-key="apartments_filter_one"
+        >
+          1 Bedroom
+        </button>
+        <button
+          class="filter-btn"
+          data-filter="two"
+          data-key="apartments_filter_two"
+        >
+          2 Bedroom
+        </button>
+        <button
+          class="filter-btn"
+          data-filter="large"
+          data-key="apartments_filter_large"
+        >
+          Large Apartments
+        </button>
       </div>
 
       <div class="rooms-container">
         <div class="room-card" data-type="one">
           <img
             src="images/1_Accommodation/Apartments/1 Bedroom Apartment/1_245 Aptm. mit Deko_0003.JPG"
+            alt="One-Bedroom Apartment"
+            data-key-alt="apartments_onebed_alt"
           />
 
-          <h3>One-Bedroom Apartment</h3>
+          <h3 data-key="apartments_onebed_title">One-Bedroom Apartment</h3>
 
-          <p>
+          <p data-key="apartments_onebed_text">
             Bedroom with double bed, open living area with sofa bed, dining
             space and fully equipped kitchenette.
           </p>
 
-          <button class="details-btn" data-room="onebed">Details</button>
+          <button
+            class="details-btn"
+            data-room="onebed"
+            data-key="apartments_details_btn"
+          >
+            Details
+          </button>
         </div>
 
         <div class="room-card" data-type="two">
           <img
             src="images/1_Accommodation/Apartments/2 Bedroom Apartment/2_252 Aptm. Oben mit Deko_0003 klein.jpg"
+            alt="2-Bedroom Apartment"
+            data-key-alt="apartments_twobed_alt"
           />
 
-          <h3>2-Bedroom Apartment</h3>
+          <h3 data-key="apartments_twobed_title">2-Bedroom Apartment</h3>
 
-          <p>
+          <p data-key="apartments_twobed_text">
             Ideal for families with a double bedroom, children’s bunk room,
             living room and kitchenette.
           </p>
 
-          <button class="details-btn" data-room="twobed">Details</button>
+          <button
+            class="details-btn"
+            data-room="twobed"
+            data-key="apartments_details_btn"
+          >
+            Details
+          </button>
         </div>
 
         <div class="room-card" data-type="two">
           <img
             src="images/1_Accommodation/Apartments/Superior 2 Bedroom Apartment/1_Apartment 246 Schlafen_Kissen 0007 klein.jpg"
+            alt="Superior 2-Bedroom Apartment"
+            data-key-alt="apartments_superior_alt"
           />
 
-          <h3>Superior 2-Bedroom Apartment</h3>
+          <h3 data-key="apartments_superior_title">
+            Superior 2-Bedroom Apartment
+          </h3>
 
-          <p>
+          <p data-key="apartments_superior_text">
             Two-story thatched house apartment with terrace and large living
             area.
           </p>
 
-          <button class="details-btn" data-room="superior">Details</button>
+          <button
+            class="details-btn"
+            data-room="superior"
+            data-key="apartments_details_btn"
+          >
+            Details
+          </button>
         </div>
 
         <div class="room-card" data-type="large">
           <img
             src="images/1_Accommodation/Apartments/Deluxe 2 Bedroom Apartment/1_Deluxe-Apartment-Schlafzimmer.jpg"
+            alt="Deluxe 2-Bedroom Apartment"
+            data-key-alt="apartments_deluxe_alt"
           />
 
-          <h3>Deluxe 2-Bedroom Apartment</h3>
+          <h3 data-key="apartments_deluxe_title">Deluxe 2-Bedroom Apartment</h3>
 
-          <p>
+          <p data-key="apartments_deluxe_text">
             Spacious apartment with balcony, study room and modern living area.
           </p>
 
-          <button class="details-btn" data-room="deluxe">Details</button>
+          <button
+            class="details-btn"
+            data-room="deluxe"
+            data-key="apartments_details_btn"
+          >
+            Details
+          </button>
         </div>
 
         <div class="room-card" data-type="large">
           <img
             src="images/1_Accommodation/Apartments/4 Bedroom Apartment/2_7015 Aptm. Living_0003 copy klein.jpg"
+            alt="4-Bedroom Apartment"
+            data-key-alt="apartments_fourbed_alt"
           />
 
-          <h3>4-Bedroom Apartment</h3>
+          <h3 data-key="apartments_fourbed_title">4-Bedroom Apartment</h3>
 
-          <p>
+          <p data-key="apartments_fourbed_text">
             Large two-story apartment perfect for groups and large families.
           </p>
 
-          <button class="details-btn" data-room="fourbed">Details</button>
+          <button
+            class="details-btn"
+            data-room="fourbed"
+            data-key="apartments_details_btn"
+          >
+            Details
+          </button>
         </div>
       </div>
 
       <!-- MODAL -->
-
       <div class="modal" id="roomModal">
         <div class="modal-content">
           <span class="modal-close">&times;</span>
@@ -245,27 +340,35 @@
 
           <div id="modalDetails"></div>
 
-          <a href="#" class="btn-primary">Book Now</a>
+          <a href="#" class="btn-primary" data-key="book_now">Book Now</a>
         </div>
       </div>
     </section>
 
     <!-- CTA -->
-     
-
     <section class="cta-section">
       <div class="cta-container">
-        <h2>Book Your Stay</h2>
-        <p>Enjoy a relaxing holiday in the countryside of Rügen.</p>
-        <p><a href="mailto:reception.rugen@hotelssunday.com ">reception.rugen@hotelssunday.com | <a href="tel:+49 38302 97700">+49 38302 97700</a></p>
-        <a href="#" class="btn-primary">Book Now</a>
+        <h2 data-key="apartments_cta_title">Book Your Stay</h2>
+        <p data-key="apartments_cta_text">
+          Enjoy a relaxing holiday in the countryside of Rügen.
+        </p>
+        <p>
+          <a href="mailto:reception.rugen@hotelssunday.com"
+            >reception.rugen@hotelssunday.com</a
+          >
+          |
+          <a href="tel:+49 38302 97700">+49 38302 97700</a>
+        </p>
+        <a href="#" class="btn-primary" data-key="book_now">Book Now</a>
       </div>
     </section>
 
     <footer class="site-footer">
       <div class="footer-columns">
         <div class="footer-column">
-          <a href="contact.html" class="footer-button">Contact Us</a>
+          <a href="contact.html" class="footer-button" data-key="contact_us"
+            >Contact Us</a
+          >
           <address>
             Sunday Resort Rügen<br />
             Sagard, Germany<br />
@@ -276,28 +379,26 @@
             <a href="mailto:sales.rugen@hotelssunday.com"
               >sales.rugen@hotelssunday.com</a
             ><br />
-            <!-- <a href=""
-              >Instagram: </a
-            ><br />
-            <a href=""
-              >Facebook: 
-            </a> -->
+            <!-- <a href="">Instagram: rugenthotel</a><br /> -->
+            <!-- <a href=" ">Facebook: rugenHotel </a> -->
           </address>
         </div>
 
         <div class="footer-column">
-          <h4>Quick Links</h4>
+          <h4 data-key="quick_links">Quick Links</h4>
 
           <ul>
-            <li><a href="#">Accommodation</a></li>
-            <li><a href="#">Spa & Wellness</a></li>
-            <li><a href="#">Gastronomy</a></li>
-            <li><a href="#">Families</a></li>
+            <li>
+              <a href="#" data-key="footer_accommodation">Accommodation</a>
+            </li>
+            <li><a href="#" data-key="footer_spa">Spa & Wellness</a></li>
+            <li><a href="#" data-key="footer_gastro">Gastronomy</a></li>
+            <li><a href="#" data-key="footer_family">Families</a></li>
           </ul>
         </div>
 
         <div class="footer-column newsletter">
-          <h4>Newsletter</h4>
+          <h4 data-key="newsletter">Newsletter</h4>
           <form
             action="https://formsubmit.co/sales.rugen@hotelssunday.com"
             method="POST"
@@ -309,11 +410,13 @@
               placeholder="Your email address"
               required
               aria-label="Your Email"
+              data-key-placeholder="newsletter_placeholder"
             />
             <button
               class="btn"
               type="submit"
               aria-label="Subscribe to Newsletter"
+              data-key="subscribe"
             >
               Subscribe
             </button>
@@ -332,11 +435,15 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 The Resort Rügen by Sunday. All rights reserved.</p>
+        <p data-key="footer_copy">
+          © 2026 The Resort Rügen by Sunday. All rights reserved.
+        </p>
         <ul class="footer-legal">
           <!-- <li><a href="privacy.html">Privacy Policy</a></li> -->
-          <li><a href="terms.html">Terms & Conditions</a></li>
-          <li><a href="sitemap.html">Sitemap</a></li>
+          <li>
+            <a href="terms.html" data-key="footer_terms">Terms & Conditions</a>
+          </li>
+          <li><a href="sitemap.html" data-key="footer_sitemap">Sitemap</a></li>
         </ul>
       </div>
     </footer>

@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   /* ===============================
      ROOM DETAILS MODAL
   =============================== */
@@ -8,48 +7,58 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalTitle = document.getElementById("modalTitle");
   const modalDetails = document.getElementById("modalDetails");
   const closeModal = document.querySelector(".modal-close");
+  function t(key, fallback) {
+    if (window.translations && window.currentLang) {
+      return window.translations[window.currentLang][key] || fallback;
+    }
+    return fallback;
+  }
 
   const roomDetails = {
-
     standard: {
+      titleKey: "hotel_standard_title",
+      detailsKey: "hotel_standard_modal",
       title: "Standard Double Room",
       details:
-        "Peaceful garden views with natural decorative elements such as wood and linen. A relaxing atmosphere perfect for unwinding during your stay on Rügen."
+        "Peaceful garden views with natural decorative elements such as wood and linen. A relaxing atmosphere perfect for unwinding during your stay on Rügen.",
     },
 
     superior: {
+      titleKey: "hotel_superior_title",
+      detailsKey: "hotel_superior_modal",
       title: "Superior Double Room",
       details:
-        "Classic continental style with additional comfort, a sleeper chair for an extra guest and a furnished balcony overlooking the Jasmunder Bodden."
+        "Classic continental style with additional comfort, a sleeper chair for an extra guest and a furnished balcony overlooking the Jasmunder Bodden.",
     },
 
     junior: {
+      titleKey: "hotel_junior_title",
+      detailsKey: "hotel_junior_modal",
       title: "Junior Suite",
       details:
-        "Ideal for couples or families with one child. Features a double bed, comfortable seating area, work desk and private balcony with scenic views."
+        "Ideal for couples or families with one child. Features a double bed, comfortable seating area, work desk and private balcony with scenic views.",
     },
 
     landauer: {
+      titleKey: "hotel_landauer_title",
+      detailsKey: "hotel_landauer_modal",
       title: "Landauer Suite",
       details:
-        "Spacious two-bedroom suite for up to six guests with a living room, sofa bed, dining area and furnished balcony."
-    }
-
+        "Spacious two-bedroom suite for up to six guests with a living room, sofa bed, dining area and furnished balcony.",
+    },
   };
 
-  document.querySelectorAll(".details-btn").forEach(button => {
-
+  document.querySelectorAll(".details-btn").forEach((button) => {
     button.addEventListener("click", () => {
-
       const roomType = button.dataset.room;
 
-      modalTitle.textContent = roomDetails[roomType].title;
-      modalDetails.textContent = roomDetails[roomType].details;
+      const room = roomDetails[roomType];
+
+      modalTitle.textContent = t(room.titleKey, room.title);
+      modalDetails.textContent = t(room.detailsKey, room.details);
 
       modal.classList.add("active");
-
     });
-
   });
 
   if (closeModal) {
@@ -66,8 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-
-
   /* ===============================
      ROOM FILTER SYSTEM
   =============================== */
@@ -75,20 +82,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const filterButtons = document.querySelectorAll(".filter-btn");
   const roomCards = document.querySelectorAll(".room-card");
 
-  filterButtons.forEach(button => {
-
+  filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
-
       const filter = button.dataset.filter;
 
-      filterButtons.forEach(btn => {
+      filterButtons.forEach((btn) => {
         btn.classList.remove("active");
       });
 
       button.classList.add("active");
 
-      roomCards.forEach(card => {
-
+      roomCards.forEach((card) => {
         const type = card.dataset.type;
 
         if (filter === "all" || filter === type) {
@@ -96,14 +100,9 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           card.classList.add("hidden");
         }
-
       });
-
     });
-
   });
-
-
 
   /* ===============================
      SCROLL ANIMATION
@@ -113,20 +112,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const animatedElements = document.querySelectorAll("[data-animate]");
 
   if (animatedElements.length > 0) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.15 },
+    );
 
-    const observer = new IntersectionObserver((entries) => {
-
-      entries.forEach(entry => {
-
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-
-      });
-
-    }, { threshold: 0.15 });
-
-    animatedElements.forEach(el => observer.observe(el));
+    animatedElements.forEach((el) => observer.observe(el));
   }
-
 });

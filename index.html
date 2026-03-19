@@ -1,13 +1,14 @@
 <!doctype html>
-<html lang="en">
+< lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Sunday Resort Rügen</title>
+    <title data-key="page_title">Sunday Resort Rügen</title>
 
     <meta
       name="description"
+      data-key="meta_description"
       content="Sunday Resort Rügen – a 4-star resort near Jasmund National Park offering hotel rooms, apartments, wellness, gastronomy and family adventures on the Baltic Sea."
     />
 
@@ -26,7 +27,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
   </head>
-
+  
   <body>
     <!-- PRELOADER -->
     <div class="preloader">
@@ -41,6 +42,7 @@
             <img
               src="images/output-onlinepngtools.png"
               alt="Sunday Resort Rügen"
+              data-key-alt="logo_alt"
             />
           </a>
         </div>
@@ -49,49 +51,48 @@
           <nav class="main-navigation" aria-label="Main Navigation">
             <ul class="nav-menu">
               <li class="has-dropdown">
-                <a href="#" aria-haspopup="true">About</a>
+                <a href="#" aria-haspopup="true" data-key="nav_about">About</a>
                 <ul class="dropdown-menu">
-                  <li><a href="about.html">Our Story</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                  <li><a href="gastronomy.html">Gastronomie - Hotel</a></li>
+                  <li><a href="about.html" data-key="nav_story">Our Story</a></li>
+                  <li><a href="contact.html" data-key="nav_contact">Contact Us</a></li>
+                  <li><a href="gastronomy.html" data-key="nav_gastronomy">Gastronomie - Hotel</a></li>
                   <li>
-                    <a href="tourist-attractions.html">Tourist Attraction</a>
+                    <a href="tourist-attractions.html" data-key="nav_attractions">Tourist Attraction</a>
                   </li>
-                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="gallery.html" data-key="nav_gallery">Gallery</a></li>
                 </ul>
               </li>
 
               <li class="has-dropdown">
-                <a href="#" aria-haspopup="true">Accommodation</a>
+                <a href="#" aria-haspopup="true" data-key="nav_accommodation">Accommodation</a>
                 <ul class="dropdown-menu">
-                  <li><a href="hotel.html">Hotel</a></li>
-                  <li><a href="apartments.html">Apartments</a></li>
+                  <li><a href="hotel.html" data-key="nav_hotel">Hotel</a></li>
+                  <li><a href="apartments.html" data-key="nav_apartments">Apartments</a></li>
                 </ul>
               </li>
 
               <li class="has-dropdown">
-                <a href="#" aria-haspopup="true">Splash Adventure World</a>
+                <a href="#" aria-haspopup="true" data-key="nav_splash">Splash Adventure World</a>
                 <ul class="dropdown-menu">
-                  <li><a href="pool-area.html">Pool Area</a></li>
-                  <li><a href="spa.html">Spa</a></li>
+                  <li><a href="pool-area.html" data-key="nav_pool">Pool Area</a></li>
+                  <li><a href="spa.html" data-key="nav_spa">Spa</a></li>
                   <li>
-                    <a href="indoor-playground.html">Indoor Playground</a>
+                    <a href="indoor-playground.html" data-key="nav_playground">Indoor Playground</a>
                   </li>
                 </ul>
               </li>
 
-              <li><a href="family.html">Family</a></li>
-              <li><a href="offers.html">Offers</a></li>
+              <li><a href="family.html" data-key="nav_family">Family</a></li>
+              <li><a href="offers.html" data-key="nav_offers">Offers</a></li>
 
-
-              <li><a href="events.html">Meeting & Events</a></li>
-
+              <li><a href="events.html" data-key="nav_events">Meeting & Events</a></li>
             </ul>
           </nav>
         </div>
 
         <div class="nav-book">
-          <a href="#" class="btn-book">Book Now</a>
+          <a href="#" class="btn-book" data-key="book_now">Book Now</a>
+          <button id="langToggle" class="lang-btn">DE</button>
         </div>
 
         <div class="mobile-menu-toggle">
@@ -109,12 +110,13 @@
           <img
             src="images/DER-RÜGENMAKLER-Precise Hotels Neddesitz.jpg"
             alt="Resort View"
+            data-key-alt="alt_resort"
           />
 
           <div class="slide-content">
-            <h1>Sunday Resort Rügen</h1>
-            <p>Relax between the Baltic Sea, forests and chalk cliffs.</p>
-            <a href="#" class="btn-primary">Book Your Stay</a>
+            <h1 data-key="hero_title">Sunday Resort Rügen</h1>
+            <p data-key="hero_subtitle">Relax between the Baltic Sea, forests and chalk cliffs.</p>
+            <a href="#" class="btn-primary" data-key="hero_cta">Book Your Stay</a>
           </div>
         </div>
 
@@ -122,12 +124,13 @@
           <img
             src="images/1_Accommodation/Apartments/1 Bedroom Apartment/1_245 Aptm. mit Deko_0003.JPG"
             alt="Apartment Room"
+            data-key-alt="alt_apartment"
           />
 
           <div class="slide-content">
-            <h1>Comfortable Rooms & Suites</h1>
-            <p>141 elegant hotel rooms designed for relaxation.</p>
-            <a href="hotel.html" class="btn-primary">Explore Rooms</a>
+            <h1 data-key="hero_slide2_title">Comfortable Rooms & Suites</h1>
+            <p data-key="hero_slide2_desc">141 elegant hotel rooms designed for relaxation.</p>
+            <a href="hotel.html" class="btn-primary" data-key="hero_slide2_cta">Explore Rooms</a>
           </div>
         </div>
 
@@ -135,12 +138,13 @@
           <img
             src="images/8_Splash/Pool/01_P8B6546_A_Realillusion.jpg"
             alt="Water Park"
+            data-key-alt="alt_waterpark"
           />
 
           <div class="slide-content">
-            <h1>Splash Adventure Water Park</h1>
-            <p>Fun for the whole family with slides and pools.</p>
-            <a href="wellness.html" class="btn-primary">Discover More</a>
+            <h1 data-key="hero_slide3_title">Splash Adventure Water Park</h1>
+            <p data-key="hero_slide3_desc">Fun for the whole family with slides and pools.</p>
+            <a href="wellness.html" class="btn-primary" data-key="hero_slide3_cta">Discover More</a>
           </div>
         </div>
       </div>
@@ -157,7 +161,7 @@
     <!-- QUOTE SECTION -->
     <section class="section-transition-quote">
       <div class="quote-box">
-        <p class="quote-text">
+        <p class="quote-text" data-key="quote_text">
           Nature, relaxation and family adventures on Germany’s largest island.
         </p>
       </div>
@@ -165,7 +169,7 @@
 
     <!-- HIGHLIGHTS -->
     <section class="highlights-showcase">
-      <div class="section-label">Highlights</div>
+      <div class="section-label" data-key="section_highlights">Highlights</div>
 
       <div class="highlight-grid">
         <a href="hotel.html" class="highlight-card">
@@ -174,7 +178,7 @@
             alt="Hotel Rooms"
           />
           <div class="highlight-overlay">
-            <h3 class="highlight-title">Hotel Rooms</h3>
+            <h3 class="highlight-title" data-key="highlight_hotel">Hotel Rooms</h3>
           </div>
         </a>
 
@@ -184,14 +188,14 @@
             alt="Apartments"
           />
           <div class="highlight-overlay">
-            <h3 class="highlight-title">Apartments</h3>
+            <h3 class="highlight-title" data-key="highlight_apartments">Apartments</h3>
           </div>
         </a>
 
         <a href="wellness.html" class="highlight-card">
           <img src="images/8_Splash/Spa/spa.jpg" alt="Spa & Wellness" />
           <div class="highlight-overlay">
-            <h3 class="highlight-title">Spa & Wellness</h3>
+            <h3 class="highlight-title" data-key="highlight_spa">Spa & Wellness</h3>
           </div>
         </a>
 
@@ -201,7 +205,7 @@
             alt="Restaurant"
           />
           <div class="highlight-overlay">
-            <h3 class="highlight-title">Gastronomy</h3>
+            <h3 class="highlight-title" data-key="highlight_gastro">Gastronomy</h3>
           </div>
         </a>
 
@@ -211,14 +215,17 @@
             alt="Family Activities"
           />
           <div class="highlight-overlay">
-            <h3 class="highlight-title">Family Activities</h3>
+            <h3 class="highlight-title" data-key="highlight_family">Family Activities</h3>
           </div>
         </a>
 
         <a href="events.html" class="highlight-card">
-          <img src="images/7_Meetings & Events/Levade/IMG_3686.jpg" alt="Meetings & Events" />
+          <img
+            src="images/7_Meetings & Events/Levade/IMG_3686.jpg"
+            alt="Meetings & Events"
+          />
           <div class="highlight-overlay">
-            <h3 class="highlight-title">Meetings & Events</h3>
+            <h3 class="highlight-title" data-key="highlight_events">Meetings & Events</h3>
           </div>
         </a>
       </div>
@@ -234,18 +241,18 @@
       </div>
 
       <div class="magazine-content">
-        <div class="section-label">Discover</div>
+        <div class="section-label" data-key="section_discover">Discover</div>
 
-        <h2>A Resort Surrounded by Nature</h2>
+        <h2 data-key="discover_title">A Resort Surrounded by Nature</h2>
 
-        <p>
+        <p data-key="discover_desc">
           Sunday Resort Rügen welcomes guests to the beautiful island of Rügen.
           Located near Jasmund National Park and the famous chalk cliffs, our
           resort combines stylish accommodation with relaxation, nature, and
           family-friendly experiences.
         </p>
 
-        <a href="#" class="btn-primary">Learn More</a>
+        <a href="#" class="btn-primary" data-key="learn_more">Learn More</a>
       </div>
     </section>
 
@@ -259,17 +266,17 @@
       </div>
 
       <div class="magazine-content">
-        <div class="section-label">Accommodation</div>
+        <div class="section-label" data-key="section_accommodation">Accommodation</div>
 
-        <h2>Hotel Rooms & Apartments</h2>
+        <h2 data-key="accommodation_title">Hotel Rooms & Apartments</h2>
 
-        <p>
+        <p data-key="accommodation_desc">
           The resort offers 141 hotel rooms and 86 vacation apartments set in
           peaceful green surroundings. Guests can enjoy comfort, modern design,
           and the perfect starting point to explore the Baltic island.
         </p>
 
-        <a href="#" class="btn-primary">View Accommodation</a>
+        <a href="#" class="btn-primary" data-key="view_accommodation">View Accommodation</a>
       </div>
     </section>
 
@@ -280,23 +287,23 @@
       </div>
 
       <div class="magazine-content">
-        <div class="section-label">Wellness</div>
+        <div class="section-label" data-key="section_wellness">Wellness</div>
 
-        <h2>A Place to Feel Good</h2>
+        <h2 data-key="wellness_title">A Place to Feel Good</h2>
 
-        <p>
+        <p data-key="wellness_desc">
           Relax in the spa area or enjoy Splash Erlebniswelt, a 3,500 m²
           adventure water park with pools, slides, sauna and wellness
           treatments.
         </p>
 
-        <a href="wellness.html" class="btn-primary">Explore Wellness</a>
+        <a href="wellness.html" class="btn-primary" data-key="explore_wellness">Explore Wellness</a>
       </div>
     </section>
 
     <!-- EXPLORE RUGEN -->
     <section class="things-section">
-      <div class="section-label">Explore Rügen</div>
+      <div class="section-label" data-key="section_explore">Explore Rügen</div>
 
       <div class="things-grid">
         <div class="thing-card">
@@ -305,28 +312,28 @@
             alt="Jasmund National Park"
           />
           <div class="thing-info">
-            <a href="#">Jasmund National Park</a>
+            <a href="#" data-key="explore_jasmund">Jasmund National Park</a>
           </div>
         </div>
 
         <div class="thing-card">
           <img src="images/Schaabe Beach.jpg" alt="Schaabe Beach" />
           <div class="thing-info">
-            <a href="#">Schaabe Beach</a>
+            <a href="#" data-key="explore_beach">Schaabe Beach</a>
           </div>
         </div>
 
         <div class="thing-card">
           <img src="images/chalk museum.jpg.jpeg" alt="Chalk Museum" />
           <div class="thing-info">
-            <a href="#">Rügen Chalk Museum</a>
+            <a href="#" data-key="explore_museum">Rügen Chalk Museum</a>
           </div>
         </div>
 
         <div class="thing-card">
           <img src="images/Störtebeker Festival.jpg" alt="Festival" />
           <div class="thing-info">
-            <a href="#">Störtebeker Festival</a>
+            <a href="#" data-key="explore_festival">Störtebeker Festival</a>
           </div>
         </div>
       </div>
@@ -336,7 +343,7 @@
     <footer class="site-footer">
       <div class="footer-columns">
         <div class="footer-column">
-          <a href="contact.html" class="footer-button">Contact Us</a>
+          <a href="contact.html" class="footer-button" data-key="contact_us">Contact Us</a>
           <address>
             Sunday Resort Rügen<br />
             Sagard, Germany<br />
@@ -353,18 +360,18 @@
         </div>
 
         <div class="footer-column">
-          <h4>Quick Links</h4>
+          <h4 data-key="quick_links">Quick Links</h4>
 
           <ul>
-            <li><a href="#">Accommodation</a></li>
-            <li><a href="#">Spa & Wellness</a></li>
-            <li><a href="#">Gastronomy</a></li>
-            <li><a href="#">Families</a></li>
+            <li><a href="#" data-key="footer_accommodation">Accommodation</a></li>
+            <li><a href="#" data-key="footer_spa">Spa & Wellness</a></li>
+            <li><a href="#" data-key="footer_gastro">Gastronomy</a></li>
+            <li><a href="#" data-key="footer_family">Families</a></li>
           </ul>
         </div>
 
         <div class="footer-column newsletter">
-          <h4>Newsletter</h4>
+          <h4 data-key="newsletter">Newsletter</h4>
           <form
             action="https://formsubmit.co/sales.rugen@hotelssunday.com"
             method="POST"
@@ -376,11 +383,13 @@
               placeholder="Your email address"
               required
               aria-label="Your Email"
+              data-key-placeholder="newsletter_placeholder"
             />
             <button
               class="btn"
               type="submit"
               aria-label="Subscribe to Newsletter"
+              data-key="subscribe"
             >
               Subscribe
             </button>
@@ -399,11 +408,11 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 The Resort Rügen by Sunday. All rights reserved.</p>
+        <p data-key="footer_copy">© 2026 The Resort Rügen by Sunday. All rights reserved.</p>
         <ul class="footer-legal">
           <!-- <li><a href="privacy.html">Privacy Policy</a></li> -->
-          <li><a href="terms.html">Terms & Conditions</a></li>
-          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="terms.html" data-key="footer_terms">Terms & Conditions</a></li>
+          <li><a href="sitemap.html" data-key="footer_sitemap">Sitemap</a></li>
         </ul>
       </div>
     </footer>

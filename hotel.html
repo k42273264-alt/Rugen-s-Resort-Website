@@ -1,34 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
+    <title>Hotel Rooms | Sunday Resort Rügen</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Discover hotel rooms and suites at Sunday Resort Rügen including Standard Rooms, Superior Rooms, Junior Suites and Landauer Suites."
+    />
 
-<title>Hotel Rooms | Sunday Resort Rügen</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="hotel.css" />
 
-<meta name="description"
-content="Discover hotel rooms and suites at Sunday Resort Rügen including Standard Rooms, Superior Rooms, Junior Suites and Landauer Suites.">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@600&family=Lora:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="hotel.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <body>
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-</head>
-
-<body>
-
-<div class="preloader">
-<div class="loader"></div>
-</div>
-
- <!-- HEADER -->
+    <!-- HEADER -->
     <header class="site-header">
       <div class="header-container">
         <div class="logo">
@@ -36,6 +39,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
             <img
               src="images/output-onlinepngtools.png"
               alt="Sunday Resort Rügen"
+              data-key-alt="logo_alt"
             />
           </a>
         </div>
@@ -44,48 +48,76 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
           <nav class="main-navigation" aria-label="Main Navigation">
             <ul class="nav-menu">
               <li class="has-dropdown">
-                <a href="#" aria-haspopup="true">About</a>
+                <a href="#" aria-haspopup="true" data-key="nav_about">About</a>
                 <ul class="dropdown-menu">
-                  <li><a href="about.html">Our Story</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                  <li><a href="gastronomy.html">Gastronomie - Hotel</a></li>
-                  <li><a href="tourist-attractions.html">Tourist Attraction</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-              </li>
-
-              <li class="has-dropdown">
-                <a href="#" aria-haspopup="true">Accommodation</a>
-                <ul class="dropdown-menu">
-                  <li><a href="hotel.html">Hotel</a></li>
-                  <li><a href="apartments.html">Apartments</a></li>
-                </ul>
-              </li>
-
-              <li class="has-dropdown">
-                <a href="#" aria-haspopup="true">Splash Adventure World</a>
-                <ul class="dropdown-menu">
-                  <li><a href="pool-area.html">Pool Area</a></li>
-                  <li><a href="spa.html">Spa</a></li>
                   <li>
-                    <a href="indoor-playground.html">Indoor Playground</a>
+                    <a href="about.html" data-key="nav_story">Our Story</a>
+                  </li>
+                  <li>
+                    <a href="contact.html" data-key="nav_contact">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="gastronomy.html" data-key="nav_gastronomy"
+                      >Gastronomie - Hotel</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="tourist-attractions.html"
+                      data-key="nav_attractions"
+                      >Tourist Attraction</a
+                    >
+                  </li>
+                  <li>
+                    <a href="gallery.html" data-key="nav_gallery">Gallery</a>
                   </li>
                 </ul>
               </li>
 
-              <li><a href="family.html">Family</a></li>
-              <li><a href="offers.html">Offers</a></li>
+              <li class="has-dropdown">
+                <a href="#" aria-haspopup="true" data-key="nav_accommodation"
+                  >Accommodation</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a href="hotel.html" data-key="nav_hotel">Hotel</a></li>
+                  <li>
+                    <a href="apartments.html" data-key="nav_apartments"
+                      >Apartments</a
+                    >
+                  </li>
+                </ul>
+              </li>
 
+              <li class="has-dropdown">
+                <a href="#" aria-haspopup="true" data-key="nav_splash"
+                  >Splash Adventure World</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="pool-area.html" data-key="nav_pool">Pool Area</a>
+                  </li>
+                  <li><a href="spa.html" data-key="nav_spa">Spa</a></li>
+                  <li>
+                    <a href="indoor-playground.html" data-key="nav_playground"
+                      >Indoor Playground</a
+                    >
+                  </li>
+                </ul>
+              </li>
 
-              <li><a href="events.html">Meeting & Events</a></li>
-              <!-- <li><a href="tourist-attractions.html">Tourist Attraction</a></li> -->
-              <!-- <li><a href="gallery.html">Gallery</a></li> -->
+              <li><a href="family.html" data-key="nav_family">Family</a></li>
+              <li><a href="offers.html" data-key="nav_offers">Offers</a></li>
+
+              <li>
+                <a href="events.html" data-key="nav_events">Meeting & Events</a>
+              </li>
             </ul>
           </nav>
         </div>
 
         <div class="nav-book">
-          <a href="#" class="btn-book">Book Now</a>
+          <a href="#" class="btn-book" data-key="book_now">Book Now</a>
+          <button id="langToggle" class="lang-btn">DE</button>
         </div>
 
         <div class="mobile-menu-toggle">
@@ -96,224 +128,263 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
       </div>
     </header>
 
-
-
-<!-- HERO -->
-
-<section class="hero-section" style="background-image:url('images/1_Accommodation/Hotel/Grand Suite/1_Suite I Gegenschuss_0106 klein.jpg')">
-
-<div class="hero-overlay"></div>
-
-<div class="hero-content">
-
-<h1>Hotel Rooms</h1>
-
-<p>Comfortable rooms and elegant suites at Sunday Resort Rügen</p>
-
-<a href="#rooms" class="btn-primary">Explore Rooms</a>
-
-</div>
-
-</section>
-
-
-<!-- OVERVIEW -->
-
-<section class="overview-section">
-
-<div class="section-label">Hotel</div>
-
-<div class="overview-container">
-
-<div class="overview-divider"></div>
-
-<h2>Comfort and Relaxation</h2>
-
-<p data-animate>
-The hotel at Sunday Resort Rügen features 141 comfortable rooms including
-superior rooms with views and spacious suites up to 63 m².
-Designed with natural decorative elements such as wood and linen,
-the rooms create a peaceful and harmonious atmosphere for your stay.
-</p>
-
-<div class="overview-divider"></div>
-
-</div>
-
-</section>
-
-
-
-<!-- ROOMS -->
-
-<section class="rooms-section" id="rooms">
-
-<div class="section-label">Room Types</div>
-
-<h2>Choose Your Stay</h2>
-
-<div class="rooms-filter">
-
-<button class="filter-btn active" data-filter="all">All</button>
-<button class="filter-btn" data-filter="standard">Standard</button>
-<button class="filter-btn" data-filter="superior">Superior</button>
-<button class="filter-btn" data-filter="suite">Suites</button>
-
-</div>
-
-
-<div class="rooms-container">
-
-<div class="room-card" data-type="standard">
-
-<img src="images/1_Accommodation/Hotel/Standard Double Zimmer/1_Standard Gegenschuss klein.jpg">
-
-<h3>Standard Double Room</h3>
-
-<p>Peaceful garden views with cozy interiors using natural materials.</p>
-
-<button class="details-btn" data-room="standard">Details</button>
-
-</div>
-
-
-<div class="room-card" data-type="superior">
-
-<img src="images/1_Accommodation/Hotel/Superior Double Zimmer/1_Superior_0005.JPG">
-
-<h3>Superior Double Room</h3>
-
-<p>Classic continental style with furnished balcony and Bodden views.</p>
-
-<button class="details-btn" data-room="superior">Details</button>
-
-</div>
-
-
-<div class="room-card" data-type="suite">
-
-<img src="images/1_Accommodation/Hotel/Junior Suite/1_Junior Suite_Deko 0008 klein.jpg">
-
-<h3>Junior Suite</h3>
-
-<p>Spacious suite with balcony, seating area and comfortable double bed.</p>
-
-<button class="details-btn" data-room="junior">Details</button>
-
-</div>
-
-
-<div class="room-card" data-type="suite">
-
-<img src="images/1_Accommodation/Hotel/Landauer Suite/2_Landauer Suite I--_Deko 0011 klein.jpg">
-
-<h3>Landauer Suite</h3>
-
-<p>Large two-bedroom suite for families or groups up to six people.</p>
-
-<button class="details-btn" data-room="landauer">Details</button>
-
-</div>
-
-</div>
-
-
-<!-- MODAL -->
-
-<div class="modal" id="roomModal">
-
-<div class="modal-content">
-
-<span class="modal-close">&times;</span>
-
-<h3 id="modalTitle"></h3>
-
-<div id="modalDetails"></div>
-
-<a href="#" class="btn-primary">Book This Room</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- CTA -->
-
-<section class="cta-section">
-
-<div class="cta-container">
-
-<h2>Book Your Stay</h2>
-
-<p>Enjoy a relaxing stay at Sunday Resort Rügen.</p>
-<p><a href="mailto:reception.rugen@hotelssunday.com ">reception.rugen@hotelssunday.com | <a href="tel:+49 38302 97700">+49 38302 97700</a></p>
-
-<a href="#" class="btn-primary">Book Now</a>
-
-</div>
-
-</section>
-
-
-<footer class="site-footer">
-
-    <div class="footer-columns">
-
-      <div class="footer-column">
-        <a href="contact.html" class="footer-button">Contact Us</a>
-        <address>
-          Sunday Resort Rügen<br>
-          Sagard, Germany<br>
-          <a href="tel:+493830297700">+49 38302 97700</a><br>
-          <a href="mailto:reception.rugen@hotelssunday.com ">reception.rugen@hotelssunday.com </a><br>
-          <a href="mailto:sales.rugen@hotelssunday.com">sales.rugen@hotelssunday.com</a><br>
-          <!-- <a href="">Instagram: </a><br>
-          <a href="">Facebook:  </a> -->
-        </address>
+    <!-- HERO -->
+
+    <section
+      class="hero-section"
+      style="
+        background-image: url(&quot;images/1_Accommodation/Hotel/Grand Suite/1_Suite I Gegenschuss_0106 klein.jpg&quot;);
+      "
+    >
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <h1 data-key="hotel_title">Hotel Rooms</h1>
+
+        <p data-key="hotel_desc">
+          Comfortable rooms and elegant suites at Sunday Resort Rügen
+        </p>
+
+        <a href="#rooms" class="btn-primary" data-key="hotel_cta"
+          >Explore Rooms</a
+        >
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+
+    <section class="overview-section">
+      <div class="section-label" data-key="hotel_label">Hotel</div>
+
+      <div class="overview-container">
+        <div class="overview-divider"></div>
+
+        <h2 data-key="hotel_overview_title">Comfort and Relaxation</h2>
+        <p data-animate data-key="hotel_overview_desc">
+          The hotel at Sunday Resort Rügen features 141 comfortable rooms
+          including superior rooms with views and spacious suites up to 63 m².
+          Designed with natural decorative elements such as wood and linen, the
+          rooms create a peaceful and harmonious atmosphere for your stay.
+        </p>
+
+        <div class="overview-divider"></div>
+      </div>
+    </section>
+
+    <!-- ROOMS -->
+
+    <section class="rooms-section" id="rooms">
+      <div class="section-label" data-key="hotel_room_types">Room Types</div>
+
+      <h2 data-key="hotel_choose">Choose Your Stay</h2>
+      <div class="rooms-filter">
+        <button
+          class="filter-btn active"
+          data-filter="all"
+          data-key="gallery_all"
+        >
+          All
+        </button>
+        <button
+          class="filter-btn"
+          data-filter="standard"
+          data-key="hotel_standard"
+        >
+          Standard
+        </button>
+        <button
+          class="filter-btn"
+          data-filter="superior"
+          data-key="hotel_superior"
+        >
+          Superior
+        </button>
+        <button class="filter-btn" data-filter="suite" data-key="hotel_suites">
+          Suites
+        </button>
       </div>
 
-      <div class="footer-column">
-        <h4>Quick Links</h4>
+      <div class="rooms-container">
+        <div class="room-card" data-type="standard">
+          <img
+            src="images/1_Accommodation/Hotel/Standard Double Zimmer/1_Standard Gegenschuss klein.jpg"
+          />
 
-        <ul>
-          <li><a href="#">Accommodation</a></li>
-          <li><a href="#">Spa & Wellness</a></li>
-          <li><a href="#">Gastronomy</a></li>
-          <li><a href="#">Families</a></li>
+          <h3 data-key="hotel_room1_title">Standard Double Room</h3>
+
+          <p data-key="hotel_room1_desc">
+            Peaceful garden views with natural decorative elements such as wood and linen. A relaxing atmosphere perfect for unwinding during your stay on Rügen.
+          </p>
+
+          <button class="details-btn" data-room="standard" data-key="ta_details">
+             Details
+          </button>
+        </div>
+
+        <div class="room-card" data-type="superior">
+          <img
+            src="images/1_Accommodation/Hotel/Superior Double Zimmer/1_Superior_0005.JPG"
+          />
+
+          <h3 data-key="hotel_room2_title">Superior Double Room</h3>
+
+          <p data-key="hotel_room2_desc">
+            Classic continental style with furnished balcony and Bodden views.
+          </p>
+
+          <button class="details-btn" data-room="superior" data-key="ta_details">
+            Details
+          </button>
+        </div>
+
+        <div class="room-card" data-type="suite">
+          <img
+            src="images/1_Accommodation/Hotel/Junior Suite/1_Junior Suite_Deko 0008 klein.jpg"
+          />
+
+          <h3 data-key="hotel_room3_title">Junior Suite</h3>
+
+          <p data-key="hotel_room3_desc">
+            Spacious suite with balcony, seating area and comfortable double
+            bed.
+          </p>
+
+          <button class="details-btn" data-room="junior" data-key="ta_details">
+            Details
+          </button>
+        </div>
+
+        <div class="room-card" data-type="suite">
+          <img
+            src="images/1_Accommodation/Hotel/Landauer Suite/2_Landauer Suite I--_Deko 0011 klein.jpg"
+          />
+
+          <h3 data-key="hotel_room4_title">Landauer Suite</h3>
+
+          <p data-key="hotel_room4_desc">
+            Large two-bedroom suite for families or groups up to six people.
+          </p>
+
+          <button class="details-btn" data-room="landauer" data-key="ta_details">
+            Details
+          </button>
+        </div>
+      </div>
+
+      <!-- MODAL -->
+      <div class="modal" id="roomModal">
+        <div class="modal-content">
+          <span class="modal-close">&times;</span>
+          <h3 id="modalTitle"></h3>
+          <div id="modalDetails"></div>
+          <a href="#" class="btn-primary" data-key="hotel_book_room"
+            >Book This Room</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="cta-container">
+        <h2 data-key="hotel_cta_title">Book Your Stay</h2>
+
+        <p data-key="hotel_cta_desc">
+          Enjoy a relaxing stay at Sunday Resort Rügen.
+        </p>
+        <p><a href="mailto:reception.rugen@hotelssunday.com ">reception.rugen@hotelssunday.com | <a href="tel:+49 38302 97700">+49 38302 97700</a></p>
+
+
+        <a href="#" class="btn-primary" data-key="book_now">Book Now</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <a href="contact.html" class="footer-button" data-key="contact_us"
+            >Contact Us</a
+          >
+          <address>
+            Sunday Resort Rügen<br />
+            Sagard, Germany<br />
+            <a href="tel:+493830297700">+49 38302 97700</a><br />
+            <a href="mailto:reception.rugen@hotelssunday.com "
+              >reception.rugen@hotelssunday.com </a
+            ><br />
+            <a href="mailto:sales.rugen@hotelssunday.com"
+              >sales.rugen@hotelssunday.com</a
+            ><br />
+            <!-- <a href="">Instagram: rugenthotel</a><br /> -->
+            <!-- <a href=" ">Facebook: rugenHotel </a> -->
+          </address>
+        </div>
+
+        <div class="footer-column">
+          <h4 data-key="quick_links">Quick Links</h4>
+
+          <ul>
+            <li>
+              <a href="#" data-key="footer_accommodation">Accommodation</a>
+            </li>
+            <li><a href="#" data-key="footer_spa">Spa & Wellness</a></li>
+            <li><a href="#" data-key="footer_gastro">Gastronomy</a></li>
+            <li><a href="#" data-key="footer_family">Families</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column newsletter">
+          <h4 data-key="newsletter">Newsletter</h4>
+          <form
+            action="https://formsubmit.co/sales.rugen@hotelssunday.com"
+            method="POST"
+            class="newsletter-form"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              required
+              aria-label="Your Email"
+              data-key-placeholder="newsletter_placeholder"
+            />
+            <button
+              class="btn"
+              type="submit"
+              aria-label="Subscribe to Newsletter"
+              data-key="subscribe"
+            >
+              Subscribe
+            </button>
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Newsletter Signup!"
+            />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://resortrugen.booksundays.com/newsletter?subscribed=true"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-key="footer_copy">
+          © 2026 The Resort Rügen by Sunday. All rights reserved.
+        </p>
+        <ul class="footer-legal">
+          <!-- <li><a href="privacy.html">Privacy Policy</a></li> -->
+          <li>
+            <a href="terms.html" data-key="footer_terms">Terms & Conditions</a>
+          </li>
+          <li><a href="sitemap.html" data-key="footer_sitemap">Sitemap</a></li>
         </ul>
       </div>
-
-      <div class="footer-column newsletter">
-        <h4>Newsletter</h4>
-        <form action="https://formsubmit.co/sales.rugen@hotelssunday.com" method="POST" class="newsletter-form">
-          <input type="email" name="email" placeholder="Your email address" required aria-label="Your Email">
-          <button class="btn" type="submit" aria-label="Subscribe to Newsletter">Subscribe</button>
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_subject" value="New Newsletter Signup!">
-          <input type="hidden" name="_next" value="https://resortrugen.booksundays.com/newsletter?subscribed=true">
-        </form>
-      </div>
-
-
-    </div>
-   <div class="footer-bottom">
-      <p>© 2026 The Resort Rügen by Sunday. All rights reserved.</p>
-      <ul class="footer-legal">
-        <!-- <li><a href="privacy.html">Privacy Policy</a></li> -->
-        <li><a href="terms.html">Terms & Conditions</a></li>
-        <li><a href="sitemap.html">Sitemap</a></li>
-      </ul>
-    </div>
-
-  </footer>
-
-
-
-<script src="script.js"></script>
-<script src="hotel.js"></script>
-
-</body>
+    </footer>
+    <script src="script.js"></script>
+    <script src="hotel.js"></script>
+  </body>
 </html>

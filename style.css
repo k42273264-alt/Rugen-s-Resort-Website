@@ -1229,3 +1229,13 @@ body {
   background: rgba(255, 255, 255, 0.8);
   cursor: pointer;
 }
+
+.lang-btn {
+  margin-left: 10px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--primary-color);
+  background: white;
+  cursor: pointer;
+  font-weight: 600;
+}

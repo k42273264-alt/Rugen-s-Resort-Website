@@ -1,10 +1,559 @@
 {
   "nav_about": "Über uns",
-  "nav_accommodation": "Unterkunft",
+  "nav_events": "Tagungen & Veranstaltungen",
   "book_now": "Jetzt buchen",
+
   "hero_title": "Sunday Resort Rügen",
   "hero_subtitle": "Entspannen Sie zwischen Ostsee, Wäldern und Kreidefelsen.",
+
   "highlight_hotel": "Hotelzimmer",
   "highlight_apartments": "Apartments",
-  "highlight_events": "Tagungen & Veranstaltungen"
+  "highlight_spa": "Spa & Wellness",
+  "highlight_gastro": "Gastronomie",
+  "highlight_family": "Familienaktivitäten",
+  "highlight_events": "Tagungen & Events",
+
+  "section_highlights": "Highlights",
+  "quote_text": "Natur, Entspannung und Familienabenteuer auf Deutschlands größter Insel.",
+
+  "section_discover": "Entdecken",
+  "discover_title": "Ein Resort inmitten der Natur",
+  "discover_desc": "Das Sunday Resort Rügen heißt Gäste auf der wunderschönen Insel Rügen willkommen. In der Nähe des Nationalparks Jasmund und der berühmten Kreidefelsen gelegen, verbindet unser Resort stilvolle Unterkünfte mit Erholung, Natur und familienfreundlichen Erlebnissen.",
+  "learn_more": "Mehr erfahren",
+
+  "section_accommodation": "Unterkunft",
+  "accommodation_title": "Hotelzimmer & Apartments",
+  "accommodation_desc": "Das Resort bietet 141 Hotelzimmer und 86 Ferienwohnungen in ruhiger, grüner Umgebung. Gäste genießen Komfort, modernes Design und den perfekten Ausgangspunkt, um die Ostseeinsel zu erkunden.",
+  "view_accommodation": "Unterkünfte ansehen",
+
+  "section_wellness": "Wellness",
+  "wellness_title": "Ein Ort zum Wohlfühlen",
+  "wellness_desc": "Entspannen Sie im Spa-Bereich oder genießen Sie die Splash Erlebniswelt, einen 3.500 m² großen Erlebnis-Wasserpark mit Pools, Rutschen, Sauna und Wellnessanwendungen.",
+  "explore_wellness": "Wellness entdecken",
+
+  "section_explore": "Rügen entdecken",
+  "explore_jasmund": "Nationalpark Jasmund",
+  "explore_beach": "Schaabe Strand",
+  "explore_museum": "Kreidemuseum Rügen",
+  "explore_festival": "Störtebeker Festspiele",
+
+  "contact_us": "Kontakt",
+  "quick_links": "Schnellzugriff",
+  "newsletter": "Newsletter",
+  "subscribe": "Abonnieren",
+
+  "nav_story": "Unsere Geschichte",
+  "nav_contact": "Kontakt",
+  "nav_gastronomy": "Gastronomie - Hotel",
+  "nav_attractions": "Sehenswürdigkeiten",
+  "nav_gallery": "Galerie",
+  "nav_accommodation": "Unterkunft",
+  "nav_hotel": "Hotel",
+  "nav_apartments": "Apartments",
+  "nav_splash": "Splash Erlebniswelt",
+  "nav_pool": "Poolbereich",
+  "nav_spa": "Spa",
+  "nav_playground": "Indoor Spielplatz",
+  "nav_family": "Familie",
+  "nav_offers": "Angebote",
+
+  "hero_cta": "Jetzt buchen",
+
+  "footer_copy": "© 2026 The Resort Rügen by Sunday. Alle Rechte vorbehalten.",
+  "footer_accommodation": "Unterkunft",
+  "footer_spa": "Spa & Wellness",
+  "footer_gastro": "Gastronomie",
+  "footer_family": "Familien",
+  "footer_terms": "Allgemeine Geschäftsbedingungen",
+  "footer_sitemap": "Sitemap",
+
+  "newsletter_placeholder": "Ihre E-Mail-Adresse",
+
+  "logo_alt": "Sunday Resort Rügen",
+  "alt_resort": "Resortansicht",
+  "alt_waterpark": "Wasserpark",
+
+  "about_page_title": "Über Sunday Resort Rügen",
+  "about_meta_description": "Entdecken Sie das Sunday Resort Rügen – ein familienfreundliches 4-Sterne-Resort.",
+
+  "about_hero_title": "Sunday Resort Rügen",
+  "about_hero_desc": "Entspannung, Natur und Familienabenteuer an der Ostsee.",
+
+  "about_section_story": "Unsere Geschichte",
+
+  "about_nature_title": "Ein Resort inmitten der Natur",
+  "about_nature_desc": "Das Sunday Resort Rügen heißt Gäste auf der wunderschönen Insel Rügen willkommen, gelegen auf der malerischen Halbinsel Jasmund in der Nähe der berühmten Kreidefelsen und des Nationalparks Jasmund. Das Resort vereint Erholung, Natur und familienfreundliche Gastfreundschaft in einer einzigartigen Atmosphäre.",
+
+  "about_guest_title": "Ein Ziel für jeden Gast",
+  "about_guest_desc": "Das großzügige Resort bietet stilvolle Hotelzimmer, komfortable Ferienwohnungen und eine Vielzahl an Freizeitmöglichkeiten, darunter den Wasserpark Splash Erlebniswelt, einen Wellnessbereich sowie mehrere Restaurants. Sowohl Paare als auch Familien und aktive Reisende können hier ihr perfektes Urlaubserlebnis entdecken.",
+
+  "about_location_label": "Lage",
+  "about_location_title": "Insel Rügen",
+  "about_location_desc": "Auf Deutschlands größter Insel gelegen, ist das Sunday Resort Rügen von Wäldern, Stränden und der natürlichen Schönheit der Ostseeküste umgeben..",
+
+  "about_nearby": "Sehenswürdigkeiten in der Nähe:",
+  "about_attr1": "Nationalpark Jasmund",
+  "about_attr2": "Königsstuhl Kreidefelsen",
+  "about_attr3": "Schaabe Strand – 12 km",
+  "about_attr4": "Kreidemuseum Rügen",
+  "about_attr5": "Störtebeker Festspiele",
+
+  "about_why": "Warum Gäste unsere Lage lieben",
+  "about_why1": "Nähe zu Natur und Parks",
+  "about_why2": "Ideal für Radtouren",
+  "about_why3": "Familienfreundlich",
+  "about_why4": "Eine der sonnigsten Regionen Deutschlands",
+
+  "about_values_label": "Was wir bieten",
+  "about_values_title": "Das Beste von Rügen erleben",
+
+  "about_val1_title": "Komfortable Unterkünfte",
+  "about_val1_desc": "141 Hotelzimmer und großzügige Apartments, gestaltet für Entspannung und Komfort.",
+
+  "about_val2_title": "Spa & Wellness",
+  "about_val2_desc": "Entspannen Sie im Spa oder genießen Sie die Splash Erlebniswelt, einen 3.500 m² großen Erlebnis-Wasserpark.",
+
+  "about_val3_title": "Kulinarische Erlebnisse",
+  "about_val3_desc": "Saisonale und internationale Küche in unseren Restaurants, Bars und im Poolbistro.",
+
+  "about_val4_title": "Familienabenteuer",
+  "about_val4_desc": "Indoor-Spielplätze, Kinderprogramme und Outdoor-Aktivitäten für unvergessliche Familienurlaube.",
+
+  "contact_page_title": "Kontakt Sunday Resort Rügen",
+  "contact_meta_description": "Kontaktieren Sie das Sunday Resort Rügen in Sagard für Buchungen, Events, Familienurlaube oder Wellnessangebote.",
+
+  "contact_title": "Kontakt",
+  "contact_desc": "Planen Sie Ihren Aufenthalt im Sunday Resort Rügen",
+  "contact_cta": "Kontakt aufnehmen",
+
+  "contact_form_label": "Kontakt aufnehmen",
+
+  "contact_info_label": "Kontakt informationen",
+  "contact_reach": "Erreichen Sie uns",
+  "contact_hotel_name": "Sunday Resort Rügen",
+
+  "contact_getting_here": "Anreise",
+  "contact_travel": "Anreise zum Sunday Resort Rügen",
+
+  "contact_train": "Mit dem Zug",
+  "contact_train_desc": "Nächster Bahnhof: Sagard – etwa 10 Minuten vom Resort entfernt.",
+
+  "contact_car": "Mit dem Auto",
+  "contact_car_desc": "Fahren Sie über Stralsund über die Rügenbrücke und folgen Sie den Schildern Richtung Sagard und Nationalpark Jasmund.",
+
+  "contact_air": "Mit dem Flugzeug",
+  "contact_air_desc": "Nächstgelegene Flughäfen: Rostock-Laage oder Berlin Brandenburg.",
+
+  "gastro_page_title": "Gastronomie | Sunday Resort Rügen",
+  "gastro_meta_description": "Genießen Sie regionale und internationale Küche im Sunday Resort Rügen.",
+
+  "gastro_title": "Gastronomie",
+  "gastro_desc": "Eine kulinarische Reise im Sunday Resort Rügen",
+  "gastro_cta": "Angebote ansehen",
+
+  "gastro_overview_title": "Eine kulinarische Reise",
+  "gastro_overview_desc": "Im Sunday Resort Rügen genießen unsere Gäste hochwertige saisonale, regionale und internationale Küche. Von abwechslungsreichen Buffets über italienische Spezialitäten bis hin zu entspannten Drinks an der Bar ist für jeden Geschmack etwas dabei.",
+
+  "gastro_rest1_title": "Gutsherrenhaus",
+  "gastro_rest1_desc": "Das Restaurant bietet saisonale und regionale Spezialitäten.",
+  "gastro_rest1_time": "Saisonal geöffnet",
+
+  "gastro_rest2_title": "Restaurant Hofküche",
+  "gastro_rest2_desc": "Frühstück und Abendbuffet mit internationaler Küche.",
+  "gastro_rest2_time": "Täglich geöffnet 7:00 – 1:00",
+
+  "gastro_rest3_title": "L'Osteria",
+  "gastro_rest3_desc": "Italienische Küche und romantische Abendessen.",
+  "gastro_rest3_time": "Saisonal geöffnet",
+
+  "gastro_rest4_title": "Hotelbar „Zur Tränke“",
+  "gastro_rest4_desc": "Cocktails und Getränke in gemütlicher Atmosphäre.",
+  "gastro_rest4_time": "Täglich geöffnet 14:00 – 1:00",
+
+  "gastro_rest5_title": "Pool Bistro „Snack & Co.“",
+  "gastro_rest5_desc": "Snacks, Salate und Eis am Pool.",
+  "gastro_rest5_time": "Täglich geöffnet 12:00 – 19:00",
+
+  "gastro_cta_title": "Tisch reservieren",
+  "gastro_cta_desc": "Genießen Sie unvergessliche kulinarische Erlebnisse.",
+
+  "ta_page_title": "Rügen entdecken | Sunday Resort Rügen",
+  "ta_meta_description": "Entdecken Sie die natürlichen und kulturellen Highlights rund um das Sunday Resort Rügen.",
+
+  "ta_title": "Rügen entdecken",
+  "ta_desc": "Entdecken Sie die kulturellen und natürlichen Highlights der Region",
+  "ta_cta": "Attraktionen entdecken",
+
+  "ta_label": "Inselabenteuer",
+  "ta_overview_title": "Die Schönheit Rügens erleben",
+  "ta_overview_desc": "Das Sunday Resort Rügen liegt auf der Halbinsel Jasmund in der Nähe der berühmten Kreidefelsen und des Nationalparks Jasmund. Von wunderschönen Stränden bis hin zu malerischen Wanderwegen bietet die Insel zu jeder Jahreszeit unvergessliche Erlebnisse..",
+
+  "ta_top_label": "Top Sehenswürdigkeiten",
+  "ta_top_title": "Region entdecken",
+
+  "ta_attr1_title": "Nationalpark Jasmund",
+  "ta_attr1_desc": "Ein UNESCO-Weltnaturerbe, bekannt für seine Kreidefelsen und alten Buchenwälder.",
+
+  "ta_attr2_title": "Schaabe Strand",
+  "ta_attr2_desc": "Ein wunderschöner 12 km langer Sandstrand an der Ostsee, ideal für Spaziergänge und zum Schwimmen.",
+
+  "ta_attr3_title": "Kreidemuseum Rügen",
+  "ta_attr3_desc": "Europas einziges Museum über Kreideabbau und Fossilien aus der Kreidezeit.",
+
+  "ta_attr4_title": "Störtebeker Festspiele",
+  "ta_attr4_desc": "Ein spektakuläres Open-Air-Theater mit Schiffen, Pferden und Feuerwerk jeden Sommer.",
+
+  "ta_attr5_title": "Radfahren & Wandern",
+  "ta_attr5_desc": "Die Insel bietet zahlreiche Radwege und wunderschöne Wanderstrecken durch Wälder und entlang der Küste.",
+
+  "ta_details": "Details",
+
+  "ta_cta_title": "Planen Sie Ihr Inselabenteuer",
+  "ta_cta_desc": "Entdecken Sie die Schönheit Rügens während Ihres Aufenthalts.",
+
+  "ta_jasmund_title": "Nationalpark Jasmund",
+  "ta_jasmund_modal": "Ein UNESCO-Weltnaturerbe, bekannt für seine Kreidefelsen und alten Buchenwälder.",
+
+  "ta_beach_title": "Schaabe Strand",
+  "ta_beach_modal": "Ein wunderschöner 12 km langer Sandstrand an der Ostsee, ideal für Spaziergänge und zum Schwimmen.",
+
+  "ta_museum_title": "Rügener Kreidemuseum",
+  "ta_museum_modal": "Europas einziges Museum über Kreideabbau und Fossilien aus der Kreidezeit.",
+
+  "ta_festival_title": "Störtebeker Festspiele",
+  "ta_festival_modal": "Ein spektakuläres Open-Air-Theater mit Schiffen, Pferden und Feuerwerk jeden Sommer.",
+
+  "ta_cycling_title": "Radfahren & Wandern",
+  "ta_cycling_modal": "Die Insel bietet zahlreiche Radwege und wunderschöne Wanderstrecken durch Wälder und entlang der Küste.",
+
+  "gallery_page_title": "Galerie | Sunday Resort Rügen",
+  "gallery_meta_description": "Entdecken Sie das Sunday Resort Rügen durch unsere Fotogalerie.",
+
+  "gallery_title": "Galerie",
+  "gallery_desc": "Entdecken Sie die Schönheit des Sunday Resort Rügen",
+  "gallery_cta": "Galerie entdecken",
+
+  "gallery_label": "Momente im Resort",
+  "gallery_heading": "Unsere Bereiche entdecken",
+
+  "gallery_all": "Alle",
+  "gallery_hotel": "Hotel",
+  "gallery_apartments": "Apartments",
+  "gallery_splash": "Wasserpark",
+  "gallery_family": "Familie",
+  "gallery_nature": "Natur",
+
+  "gallery_img1": "Elegante Hotelsuiten",
+  "gallery_img2": "Geräumige Apartments",
+  "gallery_img3": "Splash Erlebniswelt",
+  "gallery_img4": "Familienaktivitäten",
+  "gallery_img5": "Nationalpark Jasmund",
+  "gallery_img6": "Schaabe Strand",
+
+  "gallery_cta_title": "Erleben Sie das Resort",
+  "gallery_cta_desc": "Planen Sie Ihren Aufenthalt und entdecken Sie Rügen.",
+
+  "hotel_page_title": "Hotelzimmer | Sunday Resort Rügen",
+  "hotel_meta_description": "Entdecken Sie Hotelzimmer und Suiten im Sunday Resort Rügen",
+
+  "hotel_title": "Hotelzimmer",
+  "hotel_desc": "Komfortable Zimmer und elegante Suiten",
+  "hotel_cta": "Zimmer entdecken",
+
+  "hotel_label": "Hotel",
+  "hotel_overview_title": "Komfort und Entspannung",
+  "hotel_overview_desc": "Das Hotel im Sunday Resort Rügen verfügt über 141 komfortable Zimmer, darunter Superior-Zimmer mit Aussicht sowie großzügige Suiten mit bis zu 63 m². Gestaltet mit natürlichen Dekorationselementen wie Holz und Leinen schaffen die Zimmer eine ruhige und harmonische Atmosphäre für Ihren Aufenthalt.",
+
+  "hotel_room_types": "Zimmertypen",
+  "hotel_choose": "Wählen Sie Ihren Aufenthalt",
+
+  "hotel_standard": "Standard",
+  "hotel_superior": "Superior",
+  "hotel_suites": "Suiten",
+
+  "hotel_room1_title": "Standard Doppelzimmer",
+  "hotel_room1_desc": "Ruhiger Blick in den Garten mit natürlichen Materialien wie Holz und Leinen. Eine entspannte Atmosphäre zum Abschalten auf Rügen.",
+
+  "hotel_room2_title": "Superior Doppelzimmer",
+  "hotel_room2_desc": "Klassischer Stil mit zusätzlichem Komfort, Schlafsessel und möbliertem Balkon mit Blick auf den Jasmunder Bodden.",
+
+  "hotel_room3_title": "Junior Suite",
+  "hotel_room3_desc": "Ideal für Paare oder Familien mit einem Kind. Mit Doppelbett, Sitzbereich, Schreibtisch und Balkon mit schöner Aussicht.",
+
+  "hotel_room4_title": "Landauer Suite",
+  "hotel_room4_desc": "Große Zwei-Schlafzimmer-Suite für bis zu sechs Personen mit Wohnzimmer, Schlafsofa, Essbereich und möbliertem Balkon.",
+
+  "hotel_book_room": "Zimmer buchen",
+
+  "hotel_cta_title": "Jetzt buchen",
+  "hotel_cta_desc": "Genießen Sie Ihren Aufenthalt im Sunday Resort Rügen.",
+
+  "hotel_standard_modal": "Ruhiger Blick in den Garten mit natürlichen Materialien wie Holz und Leinen. Eine entspannte Atmosphäre zum Abschalten auf Rügen.",
+  "hotel_superior_modal": "Klassischer Stil mit zusätzlichem Komfort, Schlafsessel und möbliertem Balkon mit Blick auf den Jasmunder Bodden.",
+  "hotel_junior_modal": "Ideal für Paare oder Familien mit einem Kind. Mit Doppelbett, Sitzbereich, Schreibtisch und Balkon mit schöner Aussicht.",
+  "hotel_landauer_modal": "Große Zwei-Schlafzimmer-Suite für bis zu sechs Personen mit Wohnzimmer, Schlafsofa, Essbereich und möbliertem Balkon.",
+
+  "apartments_meta_title": "Apartments | Sunday Resort Rügen",
+  "apartments_meta_description": "Komfortable Ferienwohnungen im Sunday Resort Rügen, umgeben von Natur und nur einen kurzen Spaziergang vom Hotel entfernt.",
+
+  "apartments_hero_title": "Ferienwohnungen",
+  "apartments_hero_text": "Geräumige Apartments auf dem Land, nur wenige Gehminuten vom Hotel entfernt",
+  "apartments_hero_btn": "Apartments entdecken",
+
+  "apartments_overview_label": "Apartments",
+  "apartments_overview_title": "Ein entspanntes Feriendorf",
+  "apartments_overview_text": "Das Feriendorf im Sunday Resort Rügen bietet 86 gemütliche Apartments in zweistöckigen Häusern, umgeben von weitläufigen Wiesen und ruhiger Natur. Die Apartments bieten komfortable Wohnräume und sind nur wenige Gehminuten von den Hoteleinrichtungen entfernt.",
+
+  "apartments_types_label": "Apartmenttypen",
+  "apartments_types_title": "Wählen Sie Ihren Aufenthalt",
+
+  "apartments_filter_all": "Alle",
+  "apartments_filter_one": "1 Schlafzimmer",
+  "apartments_filter_two": "2 Schlafzimmer",
+  "apartments_filter_large": "Große Apartments",
+
+  "apartments_onebed_alt": "Apartment mit 1 Schlafzimmer",
+  "apartments_onebed_title": "Apartment mit 1 Schlafzimmer",
+  "apartments_onebed_text": "Schlafzimmer mit Doppelbett, offener Wohnbereich mit Schlafsofa, Essbereich und voll ausgestatteter Küchenzeile.",
+
+  "apartments_twobed_alt": "Apartment mit 2 Schlafzimmern",
+  "apartments_twobed_title": "Apartment mit 2 Schlafzimmern",
+  "apartments_twobed_text": "Ideal für Familien mit einem Doppelschlafzimmer, Kinderzimmer mit Etagenbett, Wohnzimmer und Küchenzeile.",
+
+  "apartments_superior_alt": "Superior Apartment mit 2 Schlafzimmern",
+  "apartments_superior_title": "Superior Apartment mit 2 Schlafzimmern",
+  "apartments_superior_text": "Apartment im zweistöckigen Reetdachhaus mit Terrasse und großem Wohnbereich.",
+
+  "apartments_deluxe_alt": "Deluxe Apartment mit 2 Schlafzimmern",
+  "apartments_deluxe_title": "Deluxe Apartment mit 2 Schlafzimmern",
+  "apartments_deluxe_text": "Geräumiges Apartment mit Balkon, Arbeitszimmer und modernem Wohnbereich.",
+
+  "apartments_fourbed_alt": "Apartment mit 4 Schlafzimmern",
+  "apartments_fourbed_title": "Apartment mit 4 Schlafzimmern",
+  "apartments_fourbed_text": "Großes zweistöckiges Apartment, perfekt für Gruppen und große Familien.",
+
+  "apartments_details_btn": "Details",
+
+  "apartments_cta_title": "Buchen Sie Ihren Aufenthalt",
+  "apartments_cta_text": "Genießen Sie einen erholsamen Urlaub in der Natur von Rügen.",
+
+  "apartments_onebed_modal": "Schlafzimmer mit Doppelbett, Wohnbereich mit Schlafsofa, Essbereich und voll ausgestatteter Küchenzeile.",
+  "apartments_twobed_modal": "Perfekt für Familien mit einem Doppelschlafzimmer, Kinderzimmer mit Etagenbett und geräumigem Wohnzimmer.",
+  "apartments_superior_modal": "Zweistöckiges Apartment mit Terrasse, offenem Wohnbereich und voll ausgestatteter Küche.",
+  "apartments_deluxe_modal": "Luxuriöses Apartment mit Balkon, Terrasse und modernem Wohnbereich.",
+  "apartments_fourbed_modal": "Großes Apartment ideal für Familien oder Gruppen mit mehreren Schlafzimmern und Wohnbereichen.",
+
+  "pool_meta_title": "Poolbereich | Sunday Resort Rügen",
+  "pool_meta_description": "Entdecken Sie die Splash Erlebniswelt im Sunday Resort Rügen mit Innenpools, Rutschen, Whirlpool und familienfreundlichem Badeerlebnis.",
+
+  "pool_hero_title": "Poolbereich",
+  "pool_hero_text": "Splash Erlebniswelt – Spaß und Entspannung für die ganze Familie",
+  "pool_hero_btn": "Pool entdecken",
+
+  "pool_overview_label": "Splash Erlebniswelt",
+  "pool_overview_title": "Badespaß für alle",
+  "pool_overview_text": "Auf über 3.500 m² bietet die Splash Erlebniswelt ein einzigartiges Erlebnis für Familien und Erholungssuchende. Der Innenbereich verfügt über ein beheiztes Becken mit Strömungskanal, Sprudelliegen, Wasserfällen, eine 80 Meter lange Rutsche und ein separates Kinderbecken.",
+
+  "pool_features_label": "Pool-Highlights",
+  "pool_features_title": "Genießen Sie die Splash Erlebniswelt",
+
+  "pool_indoor_title": "Innenpool",
+  "pool_indoor_text": "Entspannen und schwimmen Sie im beheizten Innenpool mit modernem Design.",
+
+  "pool_slide_title": "Wasserrutsche",
+  "pool_slide_text": "Eine aufregende 80 Meter lange Wasserrutsche für Abenteuerlustige.",
+
+  "pool_river_title": "Strömungskanal",
+  "pool_river_text": "Lassen Sie sich im entspannten Strömungskanal treiben und genießen Sie die ruhige Atmosphäre.",
+
+  "pool_kids_title": "Kinderbecken",
+  "pool_kids_text": "Ein sicherer und spaßiger Wasserbereich speziell für Kinder.",
+
+  "pool_cta_title": "Besuchen Sie die Splash Erlebniswelt",
+  "pool_cta_text": "Genießen Sie einen Tag voller Badespaß, Entspannung und Familienzeit.",
+  "pool_cta_btn": "Jetzt buchen",
+
+  "pool_indoor_modal": "Beheiztes Hallenbad für Entspannung und gemütliches Schwimmen.",
+  "pool_slide_modal": "Eine aufregende 80 Meter lange Wasserrutsche für Abenteuerlustige.",
+  "pool_river_modal": "Lassen Sie sich im Strömungskanal der Splash Erlebniswelt treiben.",
+  "pool_kids_modal": "Ein sicherer und spaßiger Kinderbereich für junge Gäste.",
+
+  "spa_meta_title": "Spa & Wellness | Sunday Resort Rügen",
+  "spa_meta_description": "Entspannen und tanken Sie neue Energie im Spa- und Wellnessbereich des Sunday Resort Rügen. Genießen Sie Anwendungen, Ruhezonen und die Splash Erlebniswelt.",
+
+  "spa_hero_title": "Spa & Wellness",
+  "spa_hero_text": "Ein Ort zum Wohlfühlen im Sunday Resort Rügen",
+  "spa_hero_btn": "Wellness entdecken",
+
+  "spa_overview_label": "Wellness",
+  "spa_overview_title": "Ein Ort zum Wohlfühlen",
+  "spa_overview_text": "Rügen ist mehr als nur eine Insel – es ist ein Lebensgefühl. Im Sunday Resort Rügen erleben Sie die entspannte Inselatmosphäre und genießen wohltuende Erholung in unserem Spa- und Wellnessbereich. Unsere Anwendungen und Fitnessprogramme helfen Ihnen, Körper und Geist neue Energie zu schenken.",
+
+  "spa_facilities_label": "Spa-Einrichtungen",
+  "spa_facilities_title": "Entspannen & Auftanken",
+
+  "spa_treatments_title": "Spa-Anwendungen",
+  "spa_treatments_text": "Genießen Sie entspannende Spa-Anwendungen, die Körper und Geist erfrischen.",
+
+  "spa_waterpark_title": "Zugang zum Wasserpark",
+  "spa_waterpark_text": "Gäste genießen freien Zugang zur Splash Erlebniswelt.",
+
+  "spa_area_title": "Wellnessbereich",
+  "spa_area_text": "Entspannen Sie in ruhiger Umgebung und genießen Sie die wohltuende Spa-Atmosphäre.",
+
+  "spa_fitness_title": "Fitnessprogramme",
+  "spa_fitness_text": "Bleiben Sie während Ihres Aufenthalts aktiv mit Wellness- und Fitnessprogrammen.",
+
+  "spa_hours_label": "Öffnungszeiten",
+  "spa_hours_title": "Spa-Öffnungszeiten",
+  "spa_hours_main": "Täglich von 10:00 bis 21:00 Uhr.<br />Letzter Einlass um 20:00 Uhr.",
+  "spa_hours_appointments": "Wellness-Termine: 9:00 Uhr – 16:00 Uhr",
+
+  "spa_cta_title": "Buchen Sie Ihre Wellness-Auszeit",
+  "spa_cta_text": "Entspannen Sie sich, tanken Sie neue Energie und genießen Sie Wellness im Sunday Resort Rügen.",
+  "spa_cta_btn": "Jetzt buchen",
+
+  "ip_meta_title": "Indoor Playground | Sunday Resort Rügen",
+  "ip_meta_description": "Indoor-Spielplatz und Familienspaß in der Splash Erlebniswelt im Sunday Resort Rügen.",
+
+  "ip_hero_title": "Indoor-Spielplatz",
+  "ip_hero_text": "Abenteuer und Spaß für unsere jüngsten Gäste",
+  "ip_hero_btn": "Spielplatz entdecken",
+
+  "ip_overview_label": "Familienspaß",
+  "ip_overview_title": "Abenteuer für Kinder",
+  "ip_overview_text": "Der Indoor-Spielplatz in der Splash Erlebniswelt ist eine der beliebtesten Attraktionen für Familien im Sunday Resort Rügen. Kinder können Klettertürme, Trampoline und spannende Spielbereiche genießen, die für Spaß, Bewegung und Kreativität gestaltet sind.",
+
+  "ip_features_label": "Spielbereiche",
+  "ip_features_title": "Entdecken Sie den Indoor-Spielplatz",
+
+  "ip_climbing_title": "Kletterturm",
+  "ip_climbing_text": "Eine spannende Kletterstruktur, in der Kinder sicher spielen und entdecken können.",
+
+  "ip_trampoline_title": "Trampolinbereich",
+  "ip_trampoline_text": "Springen und toben in einer sicheren Indoor-Umgebung voller Spaß.",
+
+  "ip_playzone_title": "Spielzone",
+  "ip_playzone_text": "Interaktive Indoor-Spielbereiche voller Spiele und Aktivitäten.",
+
+  "ip_family_activities_title": "Familienaktivitäten",
+  "ip_family_activities_text": "Spaßige Erlebnisse, die speziell für Kinder und Familien zum gemeinsamen Genießen gestaltet sind.",
+
+  "ip_kidsclub_label": "Kinderclub",
+  "ip_kidsclub_title": "Villa Kunterbunt Kinderclub",
+  "ip_kidsclub_text": "Der Villa Kunterbunt Kinderclub betreut Kleinkinder und Kinder im Alter von drei bis elf Jahren. Zu den Aktivitäten gehören Naturausflüge, Sport, kreative Spiele und Indoor-Spielbereiche.",
+  "ip_kidsclub_lunch": "Mittagsmenü täglich zwischen 12:00 und 13:00 Uhr verfügbar.",
+
+  "ip_cta_title": "Familienurlaub auf Rügen",
+  "ip_cta_text": "Entdecken Sie unvergessliche Abenteuer für Kinder und Erwachsene.",
+
+  "family_meta_title": "Familien | Sunday Resort Rügen",
+  "family_meta_description": "Familienurlaub im Sunday Resort Rügen mit Indoor-Spielplatz, Abenteuerpool, Kinderclub und Outdoor-Aktivitäten.",
+
+  "family_hero_title": "Familienurlaub",
+  "family_hero_text": "Abenteuer für Kinder und Erholung für Eltern",
+  "family_hero_btn": "Aktivitäten entdecken",
+
+  "family_overview_label": "Familien",
+  "family_overview_title": "Urlaub für Jung und Alt",
+  "family_overview_text": "Das Sunday Resort Rügen ist speziell für Familien gestaltet. Umgeben von weiten Wiesen und frischer Landluft bietet das Resort eine Vielzahl von Aktivitäten wie einen Indoor-Spielplatz, Abenteuerpool und Kinderprogramme, damit junge Gäste und Erwachsene gleichermaßen einen unvergesslichen Aufenthalt genießen.",
+
+  "family_activities_label": "Aktivitäten",
+  "family_activities_title": "Spaß für die ganze Familie",
+
+  "family_card1_title": "Indoor-Spielplatz",
+  "family_card1_text": "Ein großer Indoor-Spielbereich mit Kletterturm, Trampolin und Spielen.",
+
+  "family_card2_title": "Abenteuerpool",
+  "family_card2_text": "Wasserpark Splash Erlebniswelt mit Rutschen und Familienbecken.",
+
+  "family_card3_title": "Kinderclub",
+  "family_card3_text": "Villa Kunterbunt bietet Aktivitäten, Spiele und Naturabenteuer für Kinder.",
+
+  "family_card4_title": "Outdoor-Aktivitäten",
+  "family_card4_text": "Minigolf, Fußballfeld, Beachvolleyball und Radtouren.",
+
+  "family_outdoors_label": "Draußen entdecken",
+
+  "family_cycling_title": "Radfahren",
+  "family_cycling_text": "Erkunden Sie die Insel Rügen mit dem Fahrrad. Fahrräder können an der Splash-Rezeption gemietet werden und das Resort ist ein perfekter Ausgangspunkt für Radtouren.",
+
+  "family_sports_title": "Sport & Spiele",
+  "family_sports_text": "Genießen Sie Minigolf, Fußball und Beachvolleyballplätze im Outdoor-Freizeitbereich.",
+
+  "family_cta_title": "Familienabenteuer warten",
+  "family_cta_text": "Planen Sie Ihren Familienurlaub im Sunday Resort Rügen.",
+  "family_cta_btn": "Aufenthalt buchen",
+
+  "offers_meta_title": "Angebote | Sunday Resort Rügen",
+  "offers_meta_description": "Entdecken Sie besondere Urlaubsangebote im Sunday Resort Rügen an der Ostsee.",
+
+  "offers_hero_title": "Sonderangebote",
+  "offers_hero_text": "Exklusive Urlaubsangebote im Sunday Resort Rügen",
+  "offers_hero_btn": "Angebote ansehen",
+
+  "offers_label": "Angebote",
+  "offers_overview_title": "Entdecken Sie unsere Urlaubspakete",
+  "offers_overview_text": "Genießen Sie unvergessliche Urlaubstage auf Rügen mit unseren exklusiven Angeboten und saisonalen Paketen. Ob Wellness, Familienurlaub oder romantischer Aufenthalt – hier finden Sie das passende Angebot.",
+
+  "offers_packages_label": "Pakete",
+  "offers_packages_title": "Unsere besten Angebote",
+
+  "offers_card1_title": "Splash Abenteuer Paket",
+  "offers_card1_text": "Unbegrenzter Zugang zur Splash Erlebniswelt mit Pools, Rutschen und Indoor-Spielplatz.",
+
+  "offers_card2_title": "Spa & Wellness Auszeit",
+  "offers_card2_text": "Entspannen Sie bei Spa-Behandlungen und Wellnessprogrammen.",
+
+  "offers_card3_title": "Familienurlaub Paket",
+  "offers_card3_text": "Ideal für Familien mit Kinderclub, Indoor-Spielplatz und Abenteuerpool.",
+
+  "offers_card4_title": "Romantischer Kurzurlaub",
+  "offers_card4_text": "Genießen Sie ruhige Tage in eleganten Zimmern und entspannter Atmosphäre.",
+
+  "offers_book_btn": "Angebot buchen",
+
+  "offers_cta_title": "Urlaub planen",
+  "offers_cta_text": "Nutzen Sie unsere Angebote und genießen Sie Rügen.",
+  "offers_cta_btn": "Jetzt buchen",
+
+  "events_meta_title": "Meetings & Events | Sunday Resort Rügen",
+  "events_meta_description": "Veranstalten Sie Seminare, Konferenzen und private Events im Sunday Resort Rügen.",
+
+  "events_hero_title": "Meetings & Events",
+  "events_hero_text": "Ein einzigartiger Veranstaltungsort für Ihr Event auf der Insel Rügen",
+  "events_hero_btn": "Räume entdecken",
+
+  "events_overview_title": "Ein einzigartiger Ort für Ihre Veranstaltung",
+  "events_overview_text1": "Das Sunday Resort Rügen bietet den idealen Rahmen für Konferenzen, Seminare und besondere Veranstaltungen. In der wunderschönen Landschaft der größten Insel Deutschlands verbindet unser Resort moderne Veranstaltungsräume mit historischem Ambiente und hervorragender Gastfreundschaft.",
+  "events_overview_text2": "Ob Sie sich für unser neobarockes Herrenhaus aus dem Jahr 1911, die großzügigen Gartenanlagen oder unsere voll ausgestatteten Tagungsräume entscheiden – Ihre Veranstaltung erhält die perfekte Kulisse.",
+
+  "events_spaces_label": "Veranstaltungsräume",
+
+  "events_space1_title": "Schloss Neddesitz",
+  "events_space1_text": "Ein historisches neobarockes Herrenhaus aus dem Jahr 1911, das einen eleganten Rahmen für Meetings, Konferenzen und Feiern bietet.",
+
+  "events_space2_title": "Konferenzräume",
+  "events_space2_text": "Moderne Tagungsräume mit Technik und komfortablen Sitzmöglichkeiten für Seminare und Firmenevents.",
+
+  "events_space3_title": "Gartenveranstaltungen",
+  "events_space3_text": "Wunderschöne Außenbereiche, perfekt für Empfänge, Feiern und große private Veranstaltungen inmitten der Natur.",
+
+  "events_facilities_label": "Ausstattung",
+
+  "events_amenity1_title": "Moderne Ausstattung",
+  "events_amenity1_text": "Voll ausgestattete Tagungsräume mit moderner Konferenztechnik.",
+
+  "events_amenity2_title": "Unterkunft",
+  "events_amenity2_text": "Gäste können in komfortablen Zimmern, Suiten und Apartments übernachten.",
+
+  "events_amenity3_title": "Catering",
+  "events_amenity3_text": "Individuelle Catering-Services aus unseren Restaurants und von unseren Köchen.",
+
+  "events_amenity4_title": "Resorteinrichtungen",
+  "events_amenity4_text": "Gäste können die Spa-Einrichtungen und den Splash-Wasserpark genießen.",
+
+  "events_cta_title": "Planen Sie Ihr Event",
+  "events_cta_text": "Unser Event-Team hilft Ihnen, eine erfolgreiche Veranstaltung auf Rügen zu organisieren.",
+  "events_cta_btn": "Aufenthalt buchen"
 }

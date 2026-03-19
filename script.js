@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   // Constants
   const SLIDE_INTERVAL = 6000;
   const DEBOUNCE_DELAY = 200;
@@ -14,53 +14,59 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Preloader Logic
   const initPreloader = () => {
-    if (sessionStorage.getItem('preloaderShown') !== 'true') {
-      const preloader = document.querySelector('.preloader');
+    if (sessionStorage.getItem("preloaderShown") !== "true") {
+      const preloader = document.querySelector(".preloader");
       if (preloader) {
-        document.body.classList.add('preloading');
-        document.querySelectorAll('.site-header, .hero-slider, section, footer').forEach((el) => {
-          el.style.display = 'none';
-        });
+        document.body.classList.add("preloading");
+        document
+          .querySelectorAll(".site-header, .hero-slider, section, footer")
+          .forEach((el) => {
+            el.style.display = "none";
+          });
 
         let progress = 0;
         const interval = setInterval(() => {
           progress += 10;
           if (progress >= 100) {
             clearInterval(interval);
-            preloader.style.opacity = '0';
+            preloader.style.opacity = "0";
             setTimeout(() => {
-              preloader.style.display = 'none';
-              document.body.classList.remove('preloading');
-              document.querySelectorAll('.site-header, .hero-slider, section, footer').forEach((el) => {
-                el.style.display = '';
-              });
-              sessionStorage.setItem('preloaderShown', 'true');
+              preloader.style.display = "none";
+              document.body.classList.remove("preloading");
+              document
+                .querySelectorAll(".site-header, .hero-slider, section, footer")
+                .forEach((el) => {
+                  el.style.display = "";
+                });
+              sessionStorage.setItem("preloaderShown", "true");
             }, 300);
           }
         }, 50);
       }
     } else {
-      const preloader = document.querySelector('.preloader');
+      const preloader = document.querySelector(".preloader");
       if (preloader) {
-        preloader.style.display = 'none';
+        preloader.style.display = "none";
       }
-      document.body.classList.remove('preloading');
-      document.querySelectorAll('.site-header, .hero-slider, section, footer').forEach((el) => {
-        el.style.display = '';
-      });
+      document.body.classList.remove("preloading");
+      document
+        .querySelectorAll(".site-header, .hero-slider, section, footer")
+        .forEach((el) => {
+          el.style.display = "";
+        });
     }
   };
 
   // Preload Images
   const preloadImages = (slides) => {
-    slides.forEach(slide => {
-      const img = slide.querySelector('img');
+    slides.forEach((slide) => {
+      const img = slide.querySelector("img");
       if (img) {
         const preloadImg = new Image();
         preloadImg.src = img.src;
         preloadImg.onerror = () => {
           console.warn(`Failed to preload image: ${img.src}`);
-          img.src = 'images/fallback.jpg';
+          img.src = "images/fallback.jpg";
         };
       }
     });
@@ -68,35 +74,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Hero Slider Logic
   const initHeroSlider = () => {
-    const slider = document.querySelector('.hero-slider');
+    const slider = document.querySelector(".hero-slider");
     if (!slider) return;
 
-    const slides = slider.querySelectorAll('.slide');
-    const dotsContainer = slider.querySelector('.slider-dots');
-    const prevButton = slider.querySelector('.prev-slide');
-    const nextButton = slider.querySelector('.next-slide');
+    const slides = slider.querySelectorAll(".slide");
+    const dotsContainer = slider.querySelector(".slider-dots");
+    const prevButton = slider.querySelector(".prev-slide");
+    const nextButton = slider.querySelector(".next-slide");
     let currentSlide = 0;
     let slideInterval;
 
     if (slides.length === 0) return;
-    if (!dotsContainer) console.warn('Slider dots container not found.');
-    if (!prevButton) console.warn('Previous button not found.');
-    if (!nextButton) console.warn('Next button not found.');
+    if (!dotsContainer) console.warn("Slider dots container not found.");
+    if (!prevButton) console.warn("Previous button not found.");
+    if (!nextButton) console.warn("Next button not found.");
 
     preloadImages(slides);
 
     const showSlide = (index) => {
       slides.forEach((slide, i) => {
         const isActive = i === index;
-        slide.classList.toggle('active', isActive);
-        const img = slide.querySelector('img');
-        if (img && slide.hasAttribute('data-zoom')) {
-          img.style.transform = isActive ? 'scale(1)' : 'scale(1.05)';
+        slide.classList.toggle("active", isActive);
+        const img = slide.querySelector("img");
+        if (img && slide.hasAttribute("data-zoom")) {
+          img.style.transform = isActive ? "scale(1)" : "scale(1.05)";
         }
       });
       if (dotsContainer) {
-        const dots = dotsContainer.querySelectorAll('.dot');
-        dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+        const dots = dotsContainer.querySelectorAll(".dot");
+        dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
       }
       currentSlide = index;
     };
@@ -120,39 +126,52 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     if (prevButton) {
-      prevButton.addEventListener('click', debounce(() => {
-        stopSlideShow();
-        prevSlide();
-        startSlideShow();
-      }, DEBOUNCE_DELAY));
+      prevButton.addEventListener(
+        "click",
+        debounce(() => {
+          stopSlideShow();
+          prevSlide();
+          startSlideShow();
+        }, DEBOUNCE_DELAY),
+      );
     }
 
     if (nextButton) {
-      nextButton.addEventListener('click', debounce(() => {
-        stopSlideShow();
-        nextSlide();
-        startSlideShow();
-      }, DEBOUNCE_DELAY));
+      nextButton.addEventListener(
+        "click",
+        debounce(() => {
+          stopSlideShow();
+          nextSlide();
+          startSlideShow();
+        }, DEBOUNCE_DELAY),
+      );
     }
 
     if (dotsContainer) {
-      dotsContainer.addEventListener('click', debounce((e) => {
-        const dot = e.target.closest('.dot');
-        if (dot) {
-          const index = Array.from(dotsContainer.querySelectorAll('.dot')).indexOf(dot);
-          if (index !== -1) {
-            stopSlideShow();
-            showSlide(index);
-            startSlideShow();
+      dotsContainer.addEventListener(
+        "click",
+        debounce((e) => {
+          const dot = e.target.closest(".dot");
+          if (dot) {
+            const index = Array.from(
+              dotsContainer.querySelectorAll(".dot"),
+            ).indexOf(dot);
+            if (index !== -1) {
+              stopSlideShow();
+              showSlide(index);
+              startSlideShow();
+            }
           }
-        }
-      }, DEBOUNCE_DELAY));
+        }, DEBOUNCE_DELAY),
+      );
 
-      dotsContainer.addEventListener('keydown', (e) => {
-        const dot = e.target.closest('.dot');
-        if (dot && (e.key === 'Enter' || e.key === ' ')) {
+      dotsContainer.addEventListener("keydown", (e) => {
+        const dot = e.target.closest(".dot");
+        if (dot && (e.key === "Enter" || e.key === " ")) {
           e.preventDefault();
-          const index = Array.from(dotsContainer.querySelectorAll('.dot')).indexOf(dot);
+          const index = Array.from(
+            dotsContainer.querySelectorAll(".dot"),
+          ).indexOf(dot);
           if (index !== -1) {
             stopSlideShow();
             showSlide(index);
@@ -165,11 +184,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let touchStartX = 0;
     let touchEndX = 0;
 
-    slider.addEventListener('touchstart', (e) => {
+    slider.addEventListener("touchstart", (e) => {
       touchStartX = e.changedTouches[0].screenX;
     });
 
-    slider.addEventListener('touchend', (e) => {
+    slider.addEventListener("touchend", (e) => {
       touchEndX = e.changedTouches[0].screenX;
       if (touchStartX - touchEndX > 50) {
         stopSlideShow();
@@ -185,46 +204,51 @@ document.addEventListener('DOMContentLoaded', () => {
     showSlide(0);
     startSlideShow();
 
-    slider.addEventListener('mouseenter', stopSlideShow);
-    slider.addEventListener('mouseleave', startSlideShow);
+    slider.addEventListener("mouseenter", stopSlideShow);
+    slider.addEventListener("mouseleave", startSlideShow);
   };
 
   // Mobile Menu Logic
   const initMobileMenu = () => {
-    const toggle = document.querySelector('.mobile-menu-toggle');
-    const nav = document.querySelector('.nav-container');
-    const dropdowns = document.querySelectorAll('.has-dropdown');
+    const toggle = document.querySelector(".mobile-menu-toggle");
+    const nav = document.querySelector(".nav-container");
+    const dropdowns = document.querySelectorAll(".has-dropdown");
 
     if (!toggle || !nav) return;
 
-    toggle.addEventListener('click', () => {
-      toggle.classList.toggle('active');
-      nav.classList.toggle('active');
-      document.body.classList.toggle('no-scroll');
+    toggle.addEventListener("click", () => {
+      toggle.classList.toggle("active");
+      nav.classList.toggle("active");
+      document.body.classList.toggle("no-scroll");
     });
 
     dropdowns.forEach((dropdown) => {
-      const link = dropdown.querySelector('a');
+      const link = dropdown.querySelector("a");
       if (link) {
-        link.addEventListener('click', (e) => {
+        link.addEventListener("click", (e) => {
           if (window.innerWidth <= 768) {
             e.preventDefault();
-            dropdown.classList.toggle('active');
-            const submenu = dropdown.querySelector('.dropdown-menu');
+            dropdown.classList.toggle("active");
+            const submenu = dropdown.querySelector(".dropdown-menu");
             if (submenu) {
-              submenu.style.display = dropdown.classList.contains('active') ? 'flex' : 'none';
+              submenu.style.display = dropdown.classList.contains("active")
+                ? "flex"
+                : "none";
             }
           }
         });
       }
     });
 
-    nav.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth <= 768 && !link.parentElement.classList.contains('has-dropdown')) {
-          toggle.classList.remove('active');
-          nav.classList.remove('active');
-          document.body.classList.remove('no-scroll');
+    nav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        if (
+          window.innerWidth <= 768 &&
+          !link.parentElement.classList.contains("has-dropdown")
+        ) {
+          toggle.classList.remove("active");
+          nav.classList.remove("active");
+          document.body.classList.remove("no-scroll");
         }
       });
     });
@@ -232,16 +256,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Header Scroll Effect
   const initHeaderScroll = () => {
-    const header = document.querySelector('.site-header');
+    const header = document.querySelector(".site-header");
     if (!header) return;
 
     let lastScroll = 0;
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       const currentScroll = window.pageYOffset;
       if (currentScroll > 50) {
-        header.classList.add('scrolled');
+        header.classList.add("scrolled");
       } else {
-        header.classList.remove('scrolled');
+        header.classList.remove("scrolled");
       }
       lastScroll = currentScroll;
     });
@@ -249,25 +273,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Newsletter Form Validation
   const initNewsletterForm = () => {
-    const form = document.querySelector('.newsletter-form');
+    const form = document.querySelector(".newsletter-form");
     if (!form) return;
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener("submit", (e) => {
       const email = form.querySelector('input[type="email"]').value;
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
       if (!emailRegex.test(email)) {
         e.preventDefault();
-        alert('Please enter a valid email address.');
+        alert("Please enter a valid email address.");
       }
     });
   };
 
   // Image Modal Logic
   const initImageModal = () => {
-    const images = document.querySelectorAll('.highlight-card img, .thing-card img');
-    const modal = document.createElement('div');
-    modal.classList.add('modal');
+    const images = document.querySelectorAll(
+      ".highlight-card img, .thing-card img",
+    );
+    const modal = document.createElement("div");
+    modal.classList.add("modal");
     modal.innerHTML = `
       <div class="modal-content">
         <img src="" alt="Modal Image">
@@ -277,56 +303,57 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     document.body.appendChild(modal);
 
-    const modalImg = modal.querySelector('img');
-    const modalText = modal.querySelector('p');
-    const closeButton = modal.querySelector('button');
+    const modalImg = modal.querySelector("img");
+    const modalText = modal.querySelector("p");
+    const closeButton = modal.querySelector("button");
 
     images.forEach((img) => {
-      img.addEventListener('click', () => {
+      img.addEventListener("click", () => {
         modalImg.src = img.src;
         modalImg.alt = img.alt;
         modalText.textContent = img.alt;
-        modal.classList.add('active');
-        document.body.classList.add('no-scroll');
+        modal.classList.add("active");
+        document.body.classList.add("no-scroll");
       });
     });
 
-    closeButton.addEventListener('click', () => {
-      modal.classList.remove('active');
-      document.body.classList.remove('no-scroll');
+    closeButton.addEventListener("click", () => {
+      modal.classList.remove("active");
+      document.body.classList.remove("no-scroll");
     });
 
-    modal.addEventListener('click', (e) => {
+    modal.addEventListener("click", (e) => {
       if (e.target === modal) {
-        modal.classList.remove('active');
-        document.body.classList.remove('no-scroll');
+        modal.classList.remove("active");
+        document.body.classList.remove("no-scroll");
       }
     });
   };
 
   // Accordion Logic
   const initAccordion = () => {
-    const toggles = document.querySelectorAll('.accordion-toggle');
+    const toggles = document.querySelectorAll(".accordion-toggle");
     if (toggles.length === 0) return;
 
-    toggles.forEach(toggle => {
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.addEventListener('click', () => {
+    toggles.forEach((toggle) => {
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.addEventListener("click", () => {
         const content = toggle.nextElementSibling;
-        if (!content || !content.classList.contains('accordion-content')) return;
+        if (!content || !content.classList.contains("accordion-content"))
+          return;
 
-        const isActive = content.classList.contains('active');
+        const isActive = content.classList.contains("active");
 
-        document.querySelectorAll('.accordion-content').forEach(item => {
-          item.classList.remove('active');
-          item.previousElementSibling.setAttribute('aria-expanded', 'false');
-          item.previousElementSibling.classList.remove('active');
+        document.querySelectorAll(".accordion-content").forEach((item) => {
+          item.classList.remove("active");
+          item.previousElementSibling.setAttribute("aria-expanded", "false");
+          item.previousElementSibling.classList.remove("active");
         });
 
         if (!isActive) {
-          content.classList.add('active');
-          toggle.setAttribute('aria-expanded', 'true');
-          toggle.classList.add('active');
+          content.classList.add("active");
+          toggle.setAttribute("aria-expanded", "true");
+          toggle.classList.add("active");
         }
       });
     });
@@ -341,10 +368,78 @@ document.addEventListener('DOMContentLoaded', () => {
   initAccordion();
 });
 
-document.body.classList.add('no-scroll');
+document.body.classList.add("no-scroll");
 setTimeout(() => {
-  if (!document.body.classList.contains('preloading')) {
-    document.body.classList.remove('no-scroll');
+  if (!document.body.classList.contains("preloading")) {
+    document.body.classList.remove("no-scroll");
   }
 }, 1000);
 
+let currentLang = localStorage.getItem("lang") || "en";
+
+async function loadLanguage(lang) {
+  const response = await fetch(`lang/${lang}.json`);
+  const translations = await response.json();
+
+  // ✅ ADD THESE 3 LINES (DO NOT REMOVE ANYTHING ELSE)
+  window.translations = window.translations || {};
+  window.translations[lang] = translations;
+  window.currentLang = lang;
+
+  document.querySelectorAll("[data-key]").forEach((el) => {
+    const key = el.getAttribute("data-key");
+    if (translations[key]) {
+      el.textContent = translations[key];
+    }
+  });
+
+  localStorage.setItem("lang", lang);
+
+  const toggle = document.getElementById("langToggle");
+  if (toggle) {
+    toggle.textContent = lang === "en" ? "DE" : "EN";
+  }
+
+  document.querySelectorAll("[data-key-placeholder]").forEach((el) => {
+    const key = el.getAttribute("data-key-placeholder");
+    if (translations[key]) {
+      el.placeholder = translations[key];
+    }
+  });
+
+  // Update placeholder
+  document.querySelectorAll("[data-key-placeholder]").forEach((el) => {
+    const key = el.getAttribute("data-key-placeholder");
+    if (translations[key]) {
+      el.placeholder = translations[key];
+    }
+  });
+
+  // Update alt text
+  document.querySelectorAll("[data-key-alt]").forEach((el) => {
+    const key = el.getAttribute("data-key-alt");
+    if (translations[key]) {
+      el.alt = translations[key];
+    }
+  });
+
+  // Update meta description
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc && translations["meta_description"]) {
+    metaDesc.setAttribute("content", translations["meta_description"]);
+  }
+
+  // Update title
+  if (translations["page_title"]) {
+    document.title = translations["page_title"];
+  }
+}
+
+// Load on start
+loadLanguage(currentLang);
+
+// Toggle button
+document.getElementById("langToggle")?.addEventListener("click", () => {
+  currentLang = currentLang === "en" ? "de" : "en";
+  loadLanguage(currentLang);
+});

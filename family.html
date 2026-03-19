@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Families | Sunday Resort Rügen</title>
+    <title data-key="family_meta_title">Families | Sunday Resort Rügen</title>
 
     <meta
       name="description"
+      data-key-content="family_meta_description"
       content="Family holidays at Sunday Resort Rügen with indoor playground, adventure pool, kids club and outdoor activities."
     />
 
@@ -33,13 +34,14 @@
 
 
    <!-- HEADER -->
-    <header class="site-header">
+   <header class="site-header">
       <div class="header-container">
         <div class="logo">
           <a href="index.html">
             <img
               src="images/output-onlinepngtools.png"
               alt="Sunday Resort Rügen"
+              data-key-alt="logo_alt"
             />
           </a>
         </div>
@@ -48,54 +50,48 @@
           <nav class="main-navigation" aria-label="Main Navigation">
             <ul class="nav-menu">
               <li class="has-dropdown">
-                <a href="#" aria-haspopup="true">About</a>
+                <a href="#" aria-haspopup="true" data-key="nav_about">About</a>
                 <ul class="dropdown-menu">
-                  <li><a href="about.html">Our Story</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                  <li><a href="gastronomy.html">Gastronomie - Hotel</a></li>
-                  <li><a href="tourist-attractions.html">Tourist Attraction</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-              </li>
-
-              <li class="has-dropdown">
-                <a href="#" aria-haspopup="true">Accommodation</a>
-                <ul class="dropdown-menu">
-                  <li><a href="hotel.html">Hotel</a></li>
-                  <li><a href="apartments.html">Apartments</a></li>
-                </ul>
-              </li>
-
-              <li class="has-dropdown">
-                <a href="#" aria-haspopup="true">Splash Adventure World</a>
-                <ul class="dropdown-menu">
-                  <li><a href="pool-area.html">Pool Area</a></li>
-                  <li><a href="spa.html">Spa</a></li>
+                  <li><a href="about.html" data-key="nav_story">Our Story</a></li>
+                  <li><a href="contact.html" data-key="nav_contact">Contact Us</a></li>
+                  <li><a href="gastronomy.html" data-key="nav_gastronomy">Gastronomie - Hotel</a></li>
                   <li>
-                    <a href="indoor-playground.html">Indoor Playground</a>
+                    <a href="tourist-attractions.html" data-key="nav_attractions">Tourist Attraction</a>
+                  </li>
+                  <li><a href="gallery.html" data-key="nav_gallery">Gallery</a></li>
+                </ul>
+              </li>
+
+              <li class="has-dropdown">
+                <a href="#" aria-haspopup="true" data-key="nav_accommodation">Accommodation</a>
+                <ul class="dropdown-menu">
+                  <li><a href="hotel.html" data-key="nav_hotel">Hotel</a></li>
+                  <li><a href="apartments.html" data-key="nav_apartments">Apartments</a></li>
+                </ul>
+              </li>
+
+              <li class="has-dropdown">
+                <a href="#" aria-haspopup="true" data-key="nav_splash">Splash Adventure World</a>
+                <ul class="dropdown-menu">
+                  <li><a href="pool-area.html" data-key="nav_pool">Pool Area</a></li>
+                  <li><a href="spa.html" data-key="nav_spa">Spa</a></li>
+                  <li>
+                    <a href="indoor-playground.html" data-key="nav_playground">Indoor Playground</a>
                   </li>
                 </ul>
               </li>
 
-              <li><a href="family.html">Family</a></li>
-              <li><a href="offers.html">Offers</a></li>
+              <li><a href="family.html" data-key="nav_family">Family</a></li>
+              <li><a href="offers.html" data-key="nav_offers">Offers</a></li>
 
-              <!-- <li class="has-dropdown">
-                <a href="#" aria-haspopup="true">Gastronomie</a>
-                <ul class="dropdown-menu">
-                  <li><a href="gastronomy.html">Hotel</a></li>
-                </ul>
-              </li> -->
-
-              <li><a href="events.html">Meeting & Events</a></li>
-              <!-- <li><a href="tourist-attractions.html">Tourist Attraction</a></li> -->
-              <!-- <li><a href="gallery.html">Gallery</a></li> -->
+              <li><a href="events.html" data-key="nav_events">Meeting & Events</a></li>
             </ul>
           </nav>
         </div>
 
         <div class="nav-book">
-          <a href="#" class="btn-book">Book Now</a>
+          <a href="#" class="btn-book" data-key="book_now">Book Now</a>
+          <button id="langToggle" class="lang-btn">DE</button>
         </div>
 
         <div class="mobile-menu-toggle">
@@ -106,8 +102,8 @@
       </div>
     </header>
 
-    <!-- HERO -->
 
+    <!-- HERO -->
     <section
       class="hero-section"
       style="
@@ -117,25 +113,24 @@
       <div class="hero-overlay"></div>
 
       <div class="hero-content">
-        <h1>Family Holidays</h1>
+        <h1 data-key="family_hero_title">Family Holidays</h1>
 
-        <p>Adventures for children and relaxation for parents</p>
+        <p data-key="family_hero_text">Adventures for children and relaxation for parents</p>
 
-        <a href="#family-activities" class="btn-primary">Explore Activities</a>
+        <a href="#family-activities" class="btn-primary" data-key="family_hero_btn">Explore Activities</a>
       </div>
     </section>
 
     <!-- OVERVIEW -->
-
     <section class="overview-section">
-      <div class="section-label">Families</div>
+      <div class="section-label" data-key="family_overview_label">Families</div>
 
       <div class="overview-container">
         <div class="overview-divider"></div>
 
-        <h2>Vacations for Young and Old</h2>
+        <h2 data-key="family_overview_title">Vacations for Young and Old</h2>
 
-        <p data-animate>
+        <p data-animate data-key="family_overview_text">
           Sunday Resort Rügen is designed especially for families. Surrounded by
           wide meadows and fresh country air, the resort offers a variety of
           activities such as an indoor playground, adventure pool and children’s
@@ -148,11 +143,10 @@
     </section>
 
     <!-- FAMILY ACTIVITIES -->
-
     <section class="facilities-section" id="family-activities">
-      <div class="section-label">Activities</div>
+      <div class="section-label" data-key="family_activities_label">Activities</div>
 
-      <h2>Fun for the Whole Family</h2>
+      <h2 data-key="family_activities_title">Fun for the Whole Family</h2>
 
       <br />
 
@@ -160,9 +154,9 @@
         <div class="facility-card" data-animate>
           <img src="images/8_Splash/Indoorspielplatz/indoor-play.jpg" />
 
-          <h3>Indoor Playground</h3>
+          <h3 data-key="family_card1_title">Indoor Playground</h3>
 
-          <p>
+          <p data-key="family_card1_text">
             A large indoor play area with climbing tower, trampoline and games.
           </p>
         </div>
@@ -170,17 +164,17 @@
         <div class="facility-card" data-animate>
           <img src="images/8_Splash/Pool/pool.jpg" />
 
-          <h3>Adventure Pool</h3>
+          <h3 data-key="family_card2_title">Adventure Pool</h3>
 
-          <p>Splash Erlebniswelt water park with slides and family pools.</p>
+          <p data-key="family_card2_text">Splash Erlebniswelt water park with slides and family pools.</p>
         </div>
 
         <div class="facility-card" data-animate>
           <img src="images/6_Kids_Family/kids-club.JPG" />
 
-          <h3>Kids Club</h3>
+          <h3 data-key="family_card3_title">Kids Club</h3>
 
-          <p>
+          <p data-key="family_card3_text">
             Villa Kunterbunt offers activities, games and nature adventures for
             children.
           </p>
@@ -189,23 +183,22 @@
         <div class="facility-card" data-animate>
           <img src="images/6_Kids_Family/outdoor.jpg" />
 
-          <h3>Outdoor Activities</h3>
+          <h3 data-key="family_card4_title">Outdoor Activities</h3>
 
-          <p>Mini golf, football field, beach volleyball and cycling tours.</p>
+          <p data-key="family_card4_text">Mini golf, football field, beach volleyball and cycling tours.</p>
         </div>
       </div>
     </section>
 
     <!-- OUTDOOR ACTIVITIES -->
-
     <section class="activities-section">
-      <div class="section-label">Explore Outdoors</div>
+      <div class="section-label" data-key="family_outdoors_label">Explore Outdoors</div>
 
       <div class="activities-container">
         <div class="activity-card">
-          <h3>Cycling</h3>
+          <h3 data-key="family_cycling_title">Cycling</h3>
 
-          <p>
+          <p data-key="family_cycling_text">
             Explore the island of Rügen by bike. Bicycles can be rented at the
             Splash reception desk and the resort is a perfect starting point for
             cycling tours.
@@ -213,9 +206,9 @@
         </div>
 
         <div class="activity-card">
-          <h3>Sports & Games</h3>
+          <h3 data-key="family_sports_title">Sports & Games</h3>
 
-          <p>
+          <p data-key="family_sports_text">
             Enjoy mini golf, soccer and beach volleyball courts located in the
             outdoor recreation area.
           </p>
@@ -224,22 +217,21 @@
     </section>
 
     <!-- CTA -->
-     <section class="cta-section">
+    <section class="cta-section">
       <div class="cta-container">
-        <h2>Family Adventures Await</h2>
-        <p>Plan your family holiday at Sunday Resort Rügen.</p>
+        <h2 data-key="family_cta_title">Family Adventures Await</h2>
+        <p data-key="family_cta_text">Plan your family holiday at Sunday Resort Rügen.</p>
         <p><a href="mailto:reception.rugen@hotelssunday.com ">reception.rugen@hotelssunday.com | <a href="tel:+49 38302 97700">+49 38302 97700</a></p>
-        <a href="#" class="btn-primary">Book Your Stay</a>
+        <a href="#" class="btn-primary" data-key="family_cta_btn">Book Your Stay</a>
       </div>
     </section>
 
 
-    <!-- Footer -->
-
+     <!-- FOOTER -->
     <footer class="site-footer">
       <div class="footer-columns">
         <div class="footer-column">
-          <a href="contact.html" class="footer-button">Contact Us</a>
+          <a href="contact.html" class="footer-button" data-key="contact_us">Contact Us</a>
           <address>
             Sunday Resort Rügen<br />
             Sagard, Germany<br />
@@ -250,24 +242,24 @@
             <a href="mailto:sales.rugen@hotelssunday.com"
               >sales.rugen@hotelssunday.com</a
             ><br />
-            <!-- <a href="">Instagram: </a><br />
-            <a href="">Facebook: </a> -->
+            <!-- <a href="">Instagram: rugenthotel</a><br /> -->
+            <!-- <a href=" ">Facebook: rugenHotel </a> -->
           </address>
         </div>
 
         <div class="footer-column">
-          <h4>Quick Links</h4>
+          <h4 data-key="quick_links">Quick Links</h4>
 
           <ul>
-            <li><a href="#">Accommodation</a></li>
-            <li><a href="#">Spa & Wellness</a></li>
-            <li><a href="#">Gastronomy</a></li>
-            <li><a href="#">Families</a></li>
+            <li><a href="#" data-key="footer_accommodation">Accommodation</a></li>
+            <li><a href="#" data-key="footer_spa">Spa & Wellness</a></li>
+            <li><a href="#" data-key="footer_gastro">Gastronomy</a></li>
+            <li><a href="#" data-key="footer_family">Families</a></li>
           </ul>
         </div>
 
         <div class="footer-column newsletter">
-          <h4>Newsletter</h4>
+          <h4 data-key="newsletter">Newsletter</h4>
           <form
             action="https://formsubmit.co/sales.rugen@hotelssunday.com"
             method="POST"
@@ -279,11 +271,13 @@
               placeholder="Your email address"
               required
               aria-label="Your Email"
+              data-key-placeholder="newsletter_placeholder"
             />
             <button
               class="btn"
               type="submit"
               aria-label="Subscribe to Newsletter"
+              data-key="subscribe"
             >
               Subscribe
             </button>
@@ -302,15 +296,14 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 The Resort Rügen by Sunday. All rights reserved.</p>
+        <p data-key="footer_copy">© 2026 The Resort Rügen by Sunday. All rights reserved.</p>
         <ul class="footer-legal">
           <!-- <li><a href="privacy.html">Privacy Policy</a></li> -->
-          <li><a href="terms.html">Terms & Conditions</a></li>
-          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="terms.html" data-key="footer_terms">Terms & Conditions</a></li>
+          <li><a href="sitemap.html" data-key="footer_sitemap">Sitemap</a></li>
         </ul>
       </div>
     </footer>
-
     <script src="script.js"></script>
     <script src="family.js"></script>
   </body>

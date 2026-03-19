@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Contact Sunday Resort Rügen</title>
+    <title data-key="contact_page_title">Contact Sunday Resort Rügen</title>
 
     <meta
       name="description"
+      data-key="contact_meta_description"
       content="Contact Sunday Resort Rügen in Sagard on the island of Rügen for bookings, events, family holidays or spa experiences near Jasmund National Park."
     />
 
@@ -34,7 +35,7 @@
       <div class="loader"></div>
     </div>
 
- <!-- HEADER -->
+    <!-- HEADER -->
     <header class="site-header">
       <div class="header-container">
         <div class="logo">
@@ -42,6 +43,7 @@
             <img
               src="images/output-onlinepngtools.png"
               alt="Sunday Resort Rügen"
+              data-key-alt="logo_alt"
             />
           </a>
         </div>
@@ -50,54 +52,76 @@
           <nav class="main-navigation" aria-label="Main Navigation">
             <ul class="nav-menu">
               <li class="has-dropdown">
-                <a href="#" aria-haspopup="true">About</a>
+                <a href="#" aria-haspopup="true" data-key="nav_about">About</a>
                 <ul class="dropdown-menu">
-                  <li><a href="about.html">Our Story</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                  <li><a href="gastronomy.html">Gastronomie - Hotel</a></li>
-                  <li><a href="tourist-attractions.html">Tourist Attraction</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-              </li>
-
-              <li class="has-dropdown">
-                <a href="#" aria-haspopup="true">Accommodation</a>
-                <ul class="dropdown-menu">
-                  <li><a href="hotel.html">Hotel</a></li>
-                  <li><a href="apartments.html">Apartments</a></li>
-                </ul>
-              </li>
-
-              <li class="has-dropdown">
-                <a href="#" aria-haspopup="true">Splash Adventure World</a>
-                <ul class="dropdown-menu">
-                  <li><a href="pool-area.html">Pool Area</a></li>
-                  <li><a href="spa.html">Spa</a></li>
                   <li>
-                    <a href="indoor-playground.html">Indoor Playground</a>
+                    <a href="about.html" data-key="nav_story">Our Story</a>
+                  </li>
+                  <li>
+                    <a href="contact.html" data-key="nav_contact">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="gastronomy.html" data-key="nav_gastronomy"
+                      >Gastronomie - Hotel</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="tourist-attractions.html"
+                      data-key="nav_attractions"
+                      >Tourist Attraction</a
+                    >
+                  </li>
+                  <li>
+                    <a href="gallery.html" data-key="nav_gallery">Gallery</a>
                   </li>
                 </ul>
               </li>
 
-              <li><a href="family.html">Family</a></li>
-              <li><a href="offers.html">Offers</a></li>
-
-              <!-- <li class="has-dropdown">
-                <a href="#" aria-haspopup="true">Gastronomie</a>
+              <li class="has-dropdown">
+                <a href="#" aria-haspopup="true" data-key="nav_accommodation"
+                  >Accommodation</a
+                >
                 <ul class="dropdown-menu">
-                  <li><a href="gastronomy.html">Hotel</a></li>
+                  <li><a href="hotel.html" data-key="nav_hotel">Hotel</a></li>
+                  <li>
+                    <a href="apartments.html" data-key="nav_apartments"
+                      >Apartments</a
+                    >
+                  </li>
                 </ul>
-              </li> -->
+              </li>
 
-              <li><a href="events.html">Meeting & Events</a></li>
-              <!-- <li><a href="tourist-attractions.html">Tourist Attraction</a></li> -->
-              <!-- <li><a href="gallery.html">Gallery</a></li> -->
+              <li class="has-dropdown">
+                <a href="#" aria-haspopup="true" data-key="nav_splash"
+                  >Splash Adventure World</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="pool-area.html" data-key="nav_pool">Pool Area</a>
+                  </li>
+                  <li><a href="spa.html" data-key="nav_spa">Spa</a></li>
+                  <li>
+                    <a href="indoor-playground.html" data-key="nav_playground"
+                      >Indoor Playground</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="family.html" data-key="nav_family">Family</a></li>
+              <li><a href="offers.html" data-key="nav_offers">Offers</a></li>
+
+              <li>
+                <a href="events.html" data-key="nav_events">Meeting & Events</a>
+              </li>
             </ul>
           </nav>
         </div>
 
         <div class="nav-book">
-          <a href="#" class="btn-book">Book Now</a>
+          <a href="#" class="btn-book" data-key="book_now">Book Now</a>
+          <button id="langToggle" class="lang-btn">DE</button>
         </div>
 
         <div class="mobile-menu-toggle">
@@ -108,102 +132,95 @@
       </div>
     </header>
 
-
-
     <!-- HERO -->
 
+    <!-- HERO -->
     <section class="hero-section parallax">
       <div class="hero-content">
-        <h1>Contact Us</h1>
+        <h1 data-key="contact_title">Contact Us</h1>
 
-        <p>Plan your stay at Sunday Resort Rügen</p>
+        <p data-key="contact_desc">Plan your stay at Sunday Resort Rügen</p>
 
-        <a href="#contact-form" class="btn-primary">Get in Touch</a>
+        <a href="#contact-form" class="btn-primary" data-key="contact_cta">
+          Get in Touch
+        </a>
       </div>
     </section>
 
     <!-- CONTACT FORM -->
-
     <section class="contact-form-section" id="contact-form">
       <div class="form-container">
-        <div class="section-label">Get in Touch</div>
-
-        
-        <!-- <form id="contactForm">
-          <input type="text" placeholder="Full Name" required />
-
-          <input type="email" placeholder="Email Address" required />
-
-          <input type="text" placeholder="Subject" />
-
-          <textarea placeholder="Your Message" rows="5"></textarea>
-
-          <button type="submit" class="btn-primary">Send Message</button>
-        </form> -->
+        <div class="section-label" data-key="contact_form_label">
+          Get in Touch
+        </div>
       </div>
     </section>
 
     <!-- CONTACT DETAILS -->
-
     <section class="contact-details-section">
-      <div class="section-label">Contact Information</div>
+      <div class="section-label" data-key="contact_info_label">
+        Contact Information
+      </div>
 
-      <h2>Reach Us</h2>
+      <h2 data-key="contact_reach">Reach Us</h2>
 
       <div class="details-container">
         <div class="details-card">
-          <h3>Sunday Resort Rügen</h3>
+          <h3 data-key="contact_hotel_name">Sunday Resort Rügen</h3>
 
           <address>
-            Neddesitz 1<br />
-            18551 Sagard<br />
-            Germany<br /><br />
-
+            Sunday Resort Rügen<br />
+            Sagard, Germany<br />
             <a href="tel:+493830297700">+49 38302 97700</a><br />
-
             <a href="mailto:spa.rugen@hotelssunday.com">
               spa.rugen@hotelssunday.com
             </a>
           </address>
 
-          <div class="social-icons">
+          <!-- <div class="social-icons">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
+          </div> -->
         </div>
 
         <div class="details-image">
           <img
             src="images/2_Facade_Outdoor/Anlage Winter 07 332.jpg"
             alt="Sunday Resort Rügen"
+            data-key-alt="logo_alt"
           />
         </div>
       </div>
     </section>
 
     <!-- GETTING HERE -->
-
     <section class="getting-here-section">
-      <div class="section-label">Getting Here</div>
+      <div class="section-label" data-key="contact_getting_here">
+        Getting Here
+      </div>
 
-      <h2>Travel to Sunday Resort Rügen</h2>
+      <h2 data-key="contact_travel">Travel to Sunday Resort Rügen</h2>
 
       <div class="collapsible-container">
         <div class="collapsible-item">
-          <button class="collapsible-toggle">By Train</button>
+          <button class="collapsible-toggle" data-key="contact_train">
+            By Train
+          </button>
 
           <div class="collapsible-content">
-            <p>
+            <p data-key="contact_train_desc">
               Nearest train station: Sagard – about 10 minutes from the resort.
             </p>
           </div>
         </div>
 
         <div class="collapsible-item">
-          <button class="collapsible-toggle">By Car</button>
+          <button class="collapsible-toggle" data-key="contact_car">
+            By Car
+          </button>
 
           <div class="collapsible-content">
-            <p>
+            <p data-key="contact_car_desc">
               Drive via Stralsund across the Rügen bridge and follow signs
               towards Sagard and Jasmund National Park.
             </p>
@@ -211,10 +228,12 @@
         </div>
 
         <div class="collapsible-item">
-          <button class="collapsible-toggle">By Air</button>
+          <button class="collapsible-toggle" data-key="contact_air">
+            By Air
+          </button>
 
           <div class="collapsible-content">
-            <p>
+            <p data-key="contact_air_desc">
               Nearest airports: Rostock–Laage Airport or Berlin Brandenburg
               Airport.
             </p>
@@ -226,65 +245,96 @@
         <iframe
           src="https://www.google.com/maps?q=Precise%20Resort%20Rugen&output=embed"
           loading="lazy"
-        >
-        </iframe>
+        ></iframe>
       </div>
     </section>
 
     <!-- FOOTER -->
 
     <footer class="site-footer">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <a href="contact.html" class="footer-button" data-key="contact_us"
+            >Contact Us</a
+          >
+          <address>
+            Sunday Resort Rügen<br />
+            Sagard, Germany<br />
+            <a href="tel:+493830297700">+49 38302 97700</a><br />
+            <a href="mailto:reception.rugen@hotelssunday.com "
+              >reception.rugen@hotelssunday.com </a
+            ><br />
+            <a href="mailto:sales.rugen@hotelssunday.com"
+              >sales.rugen@hotelssunday.com</a
+            ><br />
+            <!-- <a href="">Instagram: rugenthotel</a><br /> -->
+            <!-- <a href=" ">Facebook: rugenHotel </a> -->
+          </address>
+        </div>
 
-    <div class="footer-columns">
+        <div class="footer-column">
+          <h4 data-key="quick_links">Quick Links</h4>
 
-      <div class="footer-column">
-        <a href="contact.html" class="footer-button">Contact Us</a>
-        <address>
-          Sunday Resort Rügen<br>
-          Sagard, Germany<br>
-          <a href="tel:+493830297700">+49 38302 97700</a><br>
-          <a href="mailto:reception.rugen@hotelssunday.com ">reception.rugen@hotelssunday.com </a><br>
-          <a href="mailto:sales.rugen@hotelssunday.com">sales.rugen@hotelssunday.com</a><br>
-          <!-- <a href="">Instagram: </a><br>
-          <a href=" ">Facebook: </a> -->
-        </address>
+          <ul>
+            <li>
+              <a href="#" data-key="footer_accommodation">Accommodation</a>
+            </li>
+            <li><a href="#" data-key="footer_spa">Spa & Wellness</a></li>
+            <li><a href="#" data-key="footer_gastro">Gastronomy</a></li>
+            <li><a href="#" data-key="footer_family">Families</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column newsletter">
+          <h4 data-key="newsletter">Newsletter</h4>
+          <form
+            action="https://formsubmit.co/sales.rugen@hotelssunday.com"
+            method="POST"
+            class="newsletter-form"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              required
+              aria-label="Your Email"
+              data-key-placeholder="newsletter_placeholder"
+            />
+            <button
+              class="btn"
+              type="submit"
+              aria-label="Subscribe to Newsletter"
+              data-key="subscribe"
+            >
+              Subscribe
+            </button>
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Newsletter Signup!"
+            />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://resortrugen.booksundays.com/newsletter?subscribed=true"
+            />
+          </form>
+        </div>
       </div>
-
-      <div class="footer-column">
-        <h4>Quick Links</h4>
-
-        <ul>
-          <li><a href="#">Accommodation</a></li>
-          <li><a href="#">Spa & Wellness</a></li>
-          <li><a href="#">Gastronomy</a></li>
-          <li><a href="#">Families</a></li>
+      <div class="footer-bottom">
+        <p data-key="footer_copy">
+          © 2026 The Resort Rügen by Sunday. All rights reserved.
+        </p>
+        <ul class="footer-legal">
+          <!-- <li><a href="privacy.html">Privacy Policy</a></li> -->
+          <li>
+            <a href="terms.html" data-key="footer_terms">Terms & Conditions</a>
+          </li>
+          <li><a href="sitemap.html" data-key="footer_sitemap">Sitemap</a></li>
         </ul>
       </div>
-
-      <div class="footer-column newsletter">
-        <h4>Newsletter</h4>
-        <form action="https://formsubmit.co/sales.rugen@hotelssunday.com" method="POST" class="newsletter-form">
-          <input type="email" name="email" placeholder="Your email address" required aria-label="Your Email">
-          <button class="btn" type="submit" aria-label="Subscribe to Newsletter">Subscribe</button>
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_subject" value="New Newsletter Signup!">
-          <input type="hidden" name="_next" value="https://resortrugen.booksundays.com/newsletter?subscribed=true">
-        </form>
-      </div>
-
-
-    </div>
-   <div class="footer-bottom">
-      <p>© 2026 The Resort Rügen by Sunday. All rights reserved.</p>
-      <ul class="footer-legal">
-        <!-- <li><a href="privacy.html">Privacy Policy</a></li> -->
-        <li><a href="terms.html">Terms & Conditions</a></li>
-        <li><a href="sitemap.html">Sitemap</a></li>
-      </ul>
-    </div>
-
-  </footer>
-
+    </footer>
     <script src="script.js"></script>
     <script src="contact.js"></script>
   </body>
