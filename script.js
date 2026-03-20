@@ -375,7 +375,7 @@ setTimeout(() => {
   }
 }, 1000);
 
-let currentLang = localStorage.getItem("lang") || "en";
+let currentLang = localStorage.getItem("lang") || "de";
 
 async function loadLanguage(lang) {
   const response = await fetch(`lang/${lang}.json`);
